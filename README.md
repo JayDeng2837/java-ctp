@@ -12,3 +12,12 @@ http://blog.csdn.net/wzjin/article/details/22791089
 2、用swig方式封装的，因为直接使用的是jni技术，理论上应该比jna的快100倍，比bridj的也快几倍。
 3、java调用部分代码还没有写，有同学写了的可以告诉我，一并合并到里面去。
 4、有问题想反馈的，可以在上面博客下留言，因为工作忙，暂时不公开qq等。
+
+2015-11-17 15:21:12
+1、ctp升级到2015-5-25版本，采用的是64位的win系统，swigwin-3.0.7版，本人jdk8X64；
+2、其中的命令处理
+	生成接口的c++和java代码
+	swig -c++ -java -package com.jctp  -outdir ./ -I../include ctp.i
+	这次没有生成头文件。ctp_wrap.h
+3、c++源码编译升级为vc++10，本次没有编译生成javactp.dll。ide下载成功随后更新上去。
+
