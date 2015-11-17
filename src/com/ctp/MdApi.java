@@ -18,7 +18,7 @@ public class MdApi
 	private transient long swigCPtr;
 	protected transient boolean swigCMemOwn;
 
-	protected MdApi(long cPtr, boolean cMemoryOwn)
+	public MdApi(long cPtr, boolean cMemoryOwn)
 	{
 		swigCMemOwn = cMemoryOwn;
 		swigCPtr = cPtr;
