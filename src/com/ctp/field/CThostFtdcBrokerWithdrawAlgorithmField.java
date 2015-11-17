@@ -5,120 +5,146 @@
  * Do not make changes to this file unless you know what you are doing--modify
  * the SWIG interface file instead.
  * ----------------------------------------------------------------------------- */
-
 package com.ctp.field;
 
-import com.ctp.ctpJNI;
+import com.ctp.swig.ctpJNI;
 
-public class CThostFtdcBrokerWithdrawAlgorithmField {
-  private transient long swigCPtr;
-  protected transient boolean swigCMemOwn;
+public class CThostFtdcBrokerWithdrawAlgorithmField
+{
+	private transient long swigCPtr;
+	protected transient boolean swigCMemOwn;
 
-  protected CThostFtdcBrokerWithdrawAlgorithmField(long cPtr, boolean cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = cPtr;
-  }
+	protected CThostFtdcBrokerWithdrawAlgorithmField(long cPtr, boolean cMemoryOwn)
+	{
+		swigCMemOwn = cMemoryOwn;
+		swigCPtr = cPtr;
+	}
 
-  protected static long getCPtr(CThostFtdcBrokerWithdrawAlgorithmField obj) {
-    return (obj == null) ? 0 : obj.swigCPtr;
-  }
+	public static long getCPtr(CThostFtdcBrokerWithdrawAlgorithmField obj)
+	{
+		return (obj == null) ? 0 : obj.swigCPtr;
+	}
 
-  protected void finalize() {
-    delete();
-  }
+	protected void finalize()
+	{
+		delete();
+	}
 
-  public synchronized void delete() {
-    if (swigCPtr != 0) {
-      if (swigCMemOwn) {
-        swigCMemOwn = false;
-        ctpJNI.delete_CThostFtdcBrokerWithdrawAlgorithmField(swigCPtr);
-      }
-      swigCPtr = 0;
-    }
-  }
+	public synchronized void delete()
+	{
+		if (swigCPtr != 0)
+		{
+			if (swigCMemOwn)
+			{
+				swigCMemOwn = false;
+				ctpJNI.delete_CThostFtdcBrokerWithdrawAlgorithmField(swigCPtr);
+			}
+			swigCPtr = 0;
+		}
+	}
 
-  public void setBrokerID(String value) {
-    ctpJNI.CThostFtdcBrokerWithdrawAlgorithmField_BrokerID_set(swigCPtr, this, value);
-  }
+	public void setBrokerID(String value)
+	{
+		ctpJNI.CThostFtdcBrokerWithdrawAlgorithmField_BrokerID_set(swigCPtr, this, value);
+	}
 
-  public String getBrokerID() {
-    return ctpJNI.CThostFtdcBrokerWithdrawAlgorithmField_BrokerID_get(swigCPtr, this);
-  }
+	public String getBrokerID()
+	{
+		return ctpJNI.CThostFtdcBrokerWithdrawAlgorithmField_BrokerID_get(swigCPtr, this);
+	}
 
-  public void setWithdrawAlgorithm(char value) {
-    ctpJNI.CThostFtdcBrokerWithdrawAlgorithmField_WithdrawAlgorithm_set(swigCPtr, this, value);
-  }
+	public void setWithdrawAlgorithm(char value)
+	{
+		ctpJNI.CThostFtdcBrokerWithdrawAlgorithmField_WithdrawAlgorithm_set(swigCPtr, this, value);
+	}
 
-  public char getWithdrawAlgorithm() {
-    return ctpJNI.CThostFtdcBrokerWithdrawAlgorithmField_WithdrawAlgorithm_get(swigCPtr, this);
-  }
+	public char getWithdrawAlgorithm()
+	{
+		return ctpJNI.CThostFtdcBrokerWithdrawAlgorithmField_WithdrawAlgorithm_get(swigCPtr, this);
+	}
 
-  public void setUsingRatio(double value) {
-    ctpJNI.CThostFtdcBrokerWithdrawAlgorithmField_UsingRatio_set(swigCPtr, this, value);
-  }
+	public void setUsingRatio(double value)
+	{
+		ctpJNI.CThostFtdcBrokerWithdrawAlgorithmField_UsingRatio_set(swigCPtr, this, value);
+	}
 
-  public double getUsingRatio() {
-    return ctpJNI.CThostFtdcBrokerWithdrawAlgorithmField_UsingRatio_get(swigCPtr, this);
-  }
+	public double getUsingRatio()
+	{
+		return ctpJNI.CThostFtdcBrokerWithdrawAlgorithmField_UsingRatio_get(swigCPtr, this);
+	}
 
-  public void setIncludeCloseProfit(char value) {
-    ctpJNI.CThostFtdcBrokerWithdrawAlgorithmField_IncludeCloseProfit_set(swigCPtr, this, value);
-  }
+	public void setIncludeCloseProfit(char value)
+	{
+		ctpJNI.CThostFtdcBrokerWithdrawAlgorithmField_IncludeCloseProfit_set(swigCPtr, this, value);
+	}
 
-  public char getIncludeCloseProfit() {
-    return ctpJNI.CThostFtdcBrokerWithdrawAlgorithmField_IncludeCloseProfit_get(swigCPtr, this);
-  }
+	public char getIncludeCloseProfit()
+	{
+		return ctpJNI.CThostFtdcBrokerWithdrawAlgorithmField_IncludeCloseProfit_get(swigCPtr, this);
+	}
 
-  public void setAllWithoutTrade(char value) {
-    ctpJNI.CThostFtdcBrokerWithdrawAlgorithmField_AllWithoutTrade_set(swigCPtr, this, value);
-  }
+	public void setAllWithoutTrade(char value)
+	{
+		ctpJNI.CThostFtdcBrokerWithdrawAlgorithmField_AllWithoutTrade_set(swigCPtr, this, value);
+	}
 
-  public char getAllWithoutTrade() {
-    return ctpJNI.CThostFtdcBrokerWithdrawAlgorithmField_AllWithoutTrade_get(swigCPtr, this);
-  }
+	public char getAllWithoutTrade()
+	{
+		return ctpJNI.CThostFtdcBrokerWithdrawAlgorithmField_AllWithoutTrade_get(swigCPtr, this);
+	}
 
-  public void setAvailIncludeCloseProfit(char value) {
-    ctpJNI.CThostFtdcBrokerWithdrawAlgorithmField_AvailIncludeCloseProfit_set(swigCPtr, this, value);
-  }
+	public void setAvailIncludeCloseProfit(char value)
+	{
+		ctpJNI.CThostFtdcBrokerWithdrawAlgorithmField_AvailIncludeCloseProfit_set(swigCPtr, this, value);
+	}
 
-  public char getAvailIncludeCloseProfit() {
-    return ctpJNI.CThostFtdcBrokerWithdrawAlgorithmField_AvailIncludeCloseProfit_get(swigCPtr, this);
-  }
+	public char getAvailIncludeCloseProfit()
+	{
+		return ctpJNI.CThostFtdcBrokerWithdrawAlgorithmField_AvailIncludeCloseProfit_get(swigCPtr, this);
+	}
 
-  public void setIsBrokerUserEvent(int value) {
-    ctpJNI.CThostFtdcBrokerWithdrawAlgorithmField_IsBrokerUserEvent_set(swigCPtr, this, value);
-  }
+	public void setIsBrokerUserEvent(int value)
+	{
+		ctpJNI.CThostFtdcBrokerWithdrawAlgorithmField_IsBrokerUserEvent_set(swigCPtr, this, value);
+	}
 
-  public int getIsBrokerUserEvent() {
-    return ctpJNI.CThostFtdcBrokerWithdrawAlgorithmField_IsBrokerUserEvent_get(swigCPtr, this);
-  }
+	public int getIsBrokerUserEvent()
+	{
+		return ctpJNI.CThostFtdcBrokerWithdrawAlgorithmField_IsBrokerUserEvent_get(swigCPtr, this);
+	}
 
-  public void setCurrencyID(String value) {
-    ctpJNI.CThostFtdcBrokerWithdrawAlgorithmField_CurrencyID_set(swigCPtr, this, value);
-  }
+	public void setCurrencyID(String value)
+	{
+		ctpJNI.CThostFtdcBrokerWithdrawAlgorithmField_CurrencyID_set(swigCPtr, this, value);
+	}
 
-  public String getCurrencyID() {
-    return ctpJNI.CThostFtdcBrokerWithdrawAlgorithmField_CurrencyID_get(swigCPtr, this);
-  }
+	public String getCurrencyID()
+	{
+		return ctpJNI.CThostFtdcBrokerWithdrawAlgorithmField_CurrencyID_get(swigCPtr, this);
+	}
 
-  public void setFundMortgageRatio(double value) {
-    ctpJNI.CThostFtdcBrokerWithdrawAlgorithmField_FundMortgageRatio_set(swigCPtr, this, value);
-  }
+	public void setFundMortgageRatio(double value)
+	{
+		ctpJNI.CThostFtdcBrokerWithdrawAlgorithmField_FundMortgageRatio_set(swigCPtr, this, value);
+	}
 
-  public double getFundMortgageRatio() {
-    return ctpJNI.CThostFtdcBrokerWithdrawAlgorithmField_FundMortgageRatio_get(swigCPtr, this);
-  }
+	public double getFundMortgageRatio()
+	{
+		return ctpJNI.CThostFtdcBrokerWithdrawAlgorithmField_FundMortgageRatio_get(swigCPtr, this);
+	}
 
-  public void setBalanceAlgorithm(char value) {
-    ctpJNI.CThostFtdcBrokerWithdrawAlgorithmField_BalanceAlgorithm_set(swigCPtr, this, value);
-  }
+	public void setBalanceAlgorithm(char value)
+	{
+		ctpJNI.CThostFtdcBrokerWithdrawAlgorithmField_BalanceAlgorithm_set(swigCPtr, this, value);
+	}
 
-  public char getBalanceAlgorithm() {
-    return ctpJNI.CThostFtdcBrokerWithdrawAlgorithmField_BalanceAlgorithm_get(swigCPtr, this);
-  }
+	public char getBalanceAlgorithm()
+	{
+		return ctpJNI.CThostFtdcBrokerWithdrawAlgorithmField_BalanceAlgorithm_get(swigCPtr, this);
+	}
 
-  public CThostFtdcBrokerWithdrawAlgorithmField() {
-    this(ctpJNI.new_CThostFtdcBrokerWithdrawAlgorithmField(), true);
-  }
-
+	public CThostFtdcBrokerWithdrawAlgorithmField()
+	{
+		this(ctpJNI.new_CThostFtdcBrokerWithdrawAlgorithmField(), true);
+	}
 }

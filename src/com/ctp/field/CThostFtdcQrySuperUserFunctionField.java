@@ -5,48 +5,56 @@
  * Do not make changes to this file unless you know what you are doing--modify
  * the SWIG interface file instead.
  * ----------------------------------------------------------------------------- */
-
 package com.ctp.field;
 
-import com.ctp.ctpJNI;
+import com.ctp.swig.ctpJNI;
 
-public class CThostFtdcQrySuperUserFunctionField {
-  private transient long swigCPtr;
-  protected transient boolean swigCMemOwn;
+public class CThostFtdcQrySuperUserFunctionField
+{
+	private transient long swigCPtr;
+	protected transient boolean swigCMemOwn;
 
-  protected CThostFtdcQrySuperUserFunctionField(long cPtr, boolean cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = cPtr;
-  }
+	protected CThostFtdcQrySuperUserFunctionField(long cPtr, boolean cMemoryOwn)
+	{
+		swigCMemOwn = cMemoryOwn;
+		swigCPtr = cPtr;
+	}
 
-  protected static long getCPtr(CThostFtdcQrySuperUserFunctionField obj) {
-    return (obj == null) ? 0 : obj.swigCPtr;
-  }
+	public static long getCPtr(CThostFtdcQrySuperUserFunctionField obj)
+	{
+		return (obj == null) ? 0 : obj.swigCPtr;
+	}
 
-  protected void finalize() {
-    delete();
-  }
+	protected void finalize()
+	{
+		delete();
+	}
 
-  public synchronized void delete() {
-    if (swigCPtr != 0) {
-      if (swigCMemOwn) {
-        swigCMemOwn = false;
-        ctpJNI.delete_CThostFtdcQrySuperUserFunctionField(swigCPtr);
-      }
-      swigCPtr = 0;
-    }
-  }
+	public synchronized void delete()
+	{
+		if (swigCPtr != 0)
+		{
+			if (swigCMemOwn)
+			{
+				swigCMemOwn = false;
+				ctpJNI.delete_CThostFtdcQrySuperUserFunctionField(swigCPtr);
+			}
+			swigCPtr = 0;
+		}
+	}
 
-  public void setUserID(String value) {
-    ctpJNI.CThostFtdcQrySuperUserFunctionField_UserID_set(swigCPtr, this, value);
-  }
+	public void setUserID(String value)
+	{
+		ctpJNI.CThostFtdcQrySuperUserFunctionField_UserID_set(swigCPtr, this, value);
+	}
 
-  public String getUserID() {
-    return ctpJNI.CThostFtdcQrySuperUserFunctionField_UserID_get(swigCPtr, this);
-  }
+	public String getUserID()
+	{
+		return ctpJNI.CThostFtdcQrySuperUserFunctionField_UserID_get(swigCPtr, this);
+	}
 
-  public CThostFtdcQrySuperUserFunctionField() {
-    this(ctpJNI.new_CThostFtdcQrySuperUserFunctionField(), true);
-  }
-
+	public CThostFtdcQrySuperUserFunctionField()
+	{
+		this(ctpJNI.new_CThostFtdcQrySuperUserFunctionField(), true);
+	}
 }

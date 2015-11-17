@@ -5,96 +5,116 @@
  * Do not make changes to this file unless you know what you are doing--modify
  * the SWIG interface file instead.
  * ----------------------------------------------------------------------------- */
-
 package com.ctp.field;
 
-import com.ctp.ctpJNI;
+import com.ctp.swig.ctpJNI;
 
-public class CThostFtdcVerifyFuturePasswordAndCustInfoField {
-  private transient long swigCPtr;
-  protected transient boolean swigCMemOwn;
+public class CThostFtdcVerifyFuturePasswordAndCustInfoField
+{
+	private transient long swigCPtr;
+	protected transient boolean swigCMemOwn;
 
-  protected CThostFtdcVerifyFuturePasswordAndCustInfoField(long cPtr, boolean cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = cPtr;
-  }
+	protected CThostFtdcVerifyFuturePasswordAndCustInfoField(long cPtr, boolean cMemoryOwn)
+	{
+		swigCMemOwn = cMemoryOwn;
+		swigCPtr = cPtr;
+	}
 
-  protected static long getCPtr(CThostFtdcVerifyFuturePasswordAndCustInfoField obj) {
-    return (obj == null) ? 0 : obj.swigCPtr;
-  }
+	public static long getCPtr(CThostFtdcVerifyFuturePasswordAndCustInfoField obj)
+	{
+		return (obj == null) ? 0 : obj.swigCPtr;
+	}
 
-  protected void finalize() {
-    delete();
-  }
+	protected void finalize()
+	{
+		delete();
+	}
 
-  public synchronized void delete() {
-    if (swigCPtr != 0) {
-      if (swigCMemOwn) {
-        swigCMemOwn = false;
-        ctpJNI.delete_CThostFtdcVerifyFuturePasswordAndCustInfoField(swigCPtr);
-      }
-      swigCPtr = 0;
-    }
-  }
+	public synchronized void delete()
+	{
+		if (swigCPtr != 0)
+		{
+			if (swigCMemOwn)
+			{
+				swigCMemOwn = false;
+				ctpJNI.delete_CThostFtdcVerifyFuturePasswordAndCustInfoField(swigCPtr);
+			}
+			swigCPtr = 0;
+		}
+	}
 
-  public void setCustomerName(String value) {
-    ctpJNI.CThostFtdcVerifyFuturePasswordAndCustInfoField_CustomerName_set(swigCPtr, this, value);
-  }
+	public void setCustomerName(String value)
+	{
+		ctpJNI.CThostFtdcVerifyFuturePasswordAndCustInfoField_CustomerName_set(swigCPtr, this, value);
+	}
 
-  public String getCustomerName() {
-    return ctpJNI.CThostFtdcVerifyFuturePasswordAndCustInfoField_CustomerName_get(swigCPtr, this);
-  }
+	public String getCustomerName()
+	{
+		return ctpJNI.CThostFtdcVerifyFuturePasswordAndCustInfoField_CustomerName_get(swigCPtr, this);
+	}
 
-  public void setIdCardType(char value) {
-    ctpJNI.CThostFtdcVerifyFuturePasswordAndCustInfoField_IdCardType_set(swigCPtr, this, value);
-  }
+	public void setIdCardType(char value)
+	{
+		ctpJNI.CThostFtdcVerifyFuturePasswordAndCustInfoField_IdCardType_set(swigCPtr, this, value);
+	}
 
-  public char getIdCardType() {
-    return ctpJNI.CThostFtdcVerifyFuturePasswordAndCustInfoField_IdCardType_get(swigCPtr, this);
-  }
+	public char getIdCardType()
+	{
+		return ctpJNI.CThostFtdcVerifyFuturePasswordAndCustInfoField_IdCardType_get(swigCPtr, this);
+	}
 
-  public void setIdentifiedCardNo(String value) {
-    ctpJNI.CThostFtdcVerifyFuturePasswordAndCustInfoField_IdentifiedCardNo_set(swigCPtr, this, value);
-  }
+	public void setIdentifiedCardNo(String value)
+	{
+		ctpJNI.CThostFtdcVerifyFuturePasswordAndCustInfoField_IdentifiedCardNo_set(swigCPtr, this, value);
+	}
 
-  public String getIdentifiedCardNo() {
-    return ctpJNI.CThostFtdcVerifyFuturePasswordAndCustInfoField_IdentifiedCardNo_get(swigCPtr, this);
-  }
+	public String getIdentifiedCardNo()
+	{
+		return ctpJNI.CThostFtdcVerifyFuturePasswordAndCustInfoField_IdentifiedCardNo_get(swigCPtr, this);
+	}
 
-  public void setCustType(char value) {
-    ctpJNI.CThostFtdcVerifyFuturePasswordAndCustInfoField_CustType_set(swigCPtr, this, value);
-  }
+	public void setCustType(char value)
+	{
+		ctpJNI.CThostFtdcVerifyFuturePasswordAndCustInfoField_CustType_set(swigCPtr, this, value);
+	}
 
-  public char getCustType() {
-    return ctpJNI.CThostFtdcVerifyFuturePasswordAndCustInfoField_CustType_get(swigCPtr, this);
-  }
+	public char getCustType()
+	{
+		return ctpJNI.CThostFtdcVerifyFuturePasswordAndCustInfoField_CustType_get(swigCPtr, this);
+	}
 
-  public void setAccountID(String value) {
-    ctpJNI.CThostFtdcVerifyFuturePasswordAndCustInfoField_AccountID_set(swigCPtr, this, value);
-  }
+	public void setAccountID(String value)
+	{
+		ctpJNI.CThostFtdcVerifyFuturePasswordAndCustInfoField_AccountID_set(swigCPtr, this, value);
+	}
 
-  public String getAccountID() {
-    return ctpJNI.CThostFtdcVerifyFuturePasswordAndCustInfoField_AccountID_get(swigCPtr, this);
-  }
+	public String getAccountID()
+	{
+		return ctpJNI.CThostFtdcVerifyFuturePasswordAndCustInfoField_AccountID_get(swigCPtr, this);
+	}
 
-  public void setPassword(String value) {
-    ctpJNI.CThostFtdcVerifyFuturePasswordAndCustInfoField_Password_set(swigCPtr, this, value);
-  }
+	public void setPassword(String value)
+	{
+		ctpJNI.CThostFtdcVerifyFuturePasswordAndCustInfoField_Password_set(swigCPtr, this, value);
+	}
 
-  public String getPassword() {
-    return ctpJNI.CThostFtdcVerifyFuturePasswordAndCustInfoField_Password_get(swigCPtr, this);
-  }
+	public String getPassword()
+	{
+		return ctpJNI.CThostFtdcVerifyFuturePasswordAndCustInfoField_Password_get(swigCPtr, this);
+	}
 
-  public void setCurrencyID(String value) {
-    ctpJNI.CThostFtdcVerifyFuturePasswordAndCustInfoField_CurrencyID_set(swigCPtr, this, value);
-  }
+	public void setCurrencyID(String value)
+	{
+		ctpJNI.CThostFtdcVerifyFuturePasswordAndCustInfoField_CurrencyID_set(swigCPtr, this, value);
+	}
 
-  public String getCurrencyID() {
-    return ctpJNI.CThostFtdcVerifyFuturePasswordAndCustInfoField_CurrencyID_get(swigCPtr, this);
-  }
+	public String getCurrencyID()
+	{
+		return ctpJNI.CThostFtdcVerifyFuturePasswordAndCustInfoField_CurrencyID_get(swigCPtr, this);
+	}
 
-  public CThostFtdcVerifyFuturePasswordAndCustInfoField() {
-    this(ctpJNI.new_CThostFtdcVerifyFuturePasswordAndCustInfoField(), true);
-  }
-
+	public CThostFtdcVerifyFuturePasswordAndCustInfoField()
+	{
+		this(ctpJNI.new_CThostFtdcVerifyFuturePasswordAndCustInfoField(), true);
+	}
 }

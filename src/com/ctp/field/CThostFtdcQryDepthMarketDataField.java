@@ -5,48 +5,56 @@
  * Do not make changes to this file unless you know what you are doing--modify
  * the SWIG interface file instead.
  * ----------------------------------------------------------------------------- */
-
 package com.ctp.field;
 
-import com.ctp.ctpJNI;
+import com.ctp.swig.ctpJNI;
 
-public class CThostFtdcQryDepthMarketDataField {
-  private transient long swigCPtr;
-  protected transient boolean swigCMemOwn;
+public class CThostFtdcQryDepthMarketDataField
+{
+	private transient long swigCPtr;
+	protected transient boolean swigCMemOwn;
 
-  protected CThostFtdcQryDepthMarketDataField(long cPtr, boolean cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = cPtr;
-  }
+	protected CThostFtdcQryDepthMarketDataField(long cPtr, boolean cMemoryOwn)
+	{
+		swigCMemOwn = cMemoryOwn;
+		swigCPtr = cPtr;
+	}
 
-  protected static long getCPtr(CThostFtdcQryDepthMarketDataField obj) {
-    return (obj == null) ? 0 : obj.swigCPtr;
-  }
+	public static long getCPtr(CThostFtdcQryDepthMarketDataField obj)
+	{
+		return (obj == null) ? 0 : obj.swigCPtr;
+	}
 
-  protected void finalize() {
-    delete();
-  }
+	protected void finalize()
+	{
+		delete();
+	}
 
-  public synchronized void delete() {
-    if (swigCPtr != 0) {
-      if (swigCMemOwn) {
-        swigCMemOwn = false;
-        ctpJNI.delete_CThostFtdcQryDepthMarketDataField(swigCPtr);
-      }
-      swigCPtr = 0;
-    }
-  }
+	public synchronized void delete()
+	{
+		if (swigCPtr != 0)
+		{
+			if (swigCMemOwn)
+			{
+				swigCMemOwn = false;
+				ctpJNI.delete_CThostFtdcQryDepthMarketDataField(swigCPtr);
+			}
+			swigCPtr = 0;
+		}
+	}
 
-  public void setInstrumentID(String value) {
-    ctpJNI.CThostFtdcQryDepthMarketDataField_InstrumentID_set(swigCPtr, this, value);
-  }
+	public void setInstrumentID(String value)
+	{
+		ctpJNI.CThostFtdcQryDepthMarketDataField_InstrumentID_set(swigCPtr, this, value);
+	}
 
-  public String getInstrumentID() {
-    return ctpJNI.CThostFtdcQryDepthMarketDataField_InstrumentID_get(swigCPtr, this);
-  }
+	public String getInstrumentID()
+	{
+		return ctpJNI.CThostFtdcQryDepthMarketDataField_InstrumentID_get(swigCPtr, this);
+	}
 
-  public CThostFtdcQryDepthMarketDataField() {
-    this(ctpJNI.new_CThostFtdcQryDepthMarketDataField(), true);
-  }
-
+	public CThostFtdcQryDepthMarketDataField()
+	{
+		this(ctpJNI.new_CThostFtdcQryDepthMarketDataField(), true);
+	}
 }

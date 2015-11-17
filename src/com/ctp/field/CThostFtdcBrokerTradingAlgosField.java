@@ -5,88 +5,106 @@
  * Do not make changes to this file unless you know what you are doing--modify
  * the SWIG interface file instead.
  * ----------------------------------------------------------------------------- */
-
 package com.ctp.field;
 
-import com.ctp.ctpJNI;
+import com.ctp.swig.ctpJNI;
 
-public class CThostFtdcBrokerTradingAlgosField {
-  private transient long swigCPtr;
-  protected transient boolean swigCMemOwn;
+public class CThostFtdcBrokerTradingAlgosField
+{
+	private transient long swigCPtr;
+	protected transient boolean swigCMemOwn;
 
-  protected CThostFtdcBrokerTradingAlgosField(long cPtr, boolean cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = cPtr;
-  }
+	protected CThostFtdcBrokerTradingAlgosField(long cPtr, boolean cMemoryOwn)
+	{
+		swigCMemOwn = cMemoryOwn;
+		swigCPtr = cPtr;
+	}
 
-  protected static long getCPtr(CThostFtdcBrokerTradingAlgosField obj) {
-    return (obj == null) ? 0 : obj.swigCPtr;
-  }
+	public static long getCPtr(CThostFtdcBrokerTradingAlgosField obj)
+	{
+		return (obj == null) ? 0 : obj.swigCPtr;
+	}
 
-  protected void finalize() {
-    delete();
-  }
+	protected void finalize()
+	{
+		delete();
+	}
 
-  public synchronized void delete() {
-    if (swigCPtr != 0) {
-      if (swigCMemOwn) {
-        swigCMemOwn = false;
-        ctpJNI.delete_CThostFtdcBrokerTradingAlgosField(swigCPtr);
-      }
-      swigCPtr = 0;
-    }
-  }
+	public synchronized void delete()
+	{
+		if (swigCPtr != 0)
+		{
+			if (swigCMemOwn)
+			{
+				swigCMemOwn = false;
+				ctpJNI.delete_CThostFtdcBrokerTradingAlgosField(swigCPtr);
+			}
+			swigCPtr = 0;
+		}
+	}
 
-  public void setBrokerID(String value) {
-    ctpJNI.CThostFtdcBrokerTradingAlgosField_BrokerID_set(swigCPtr, this, value);
-  }
+	public void setBrokerID(String value)
+	{
+		ctpJNI.CThostFtdcBrokerTradingAlgosField_BrokerID_set(swigCPtr, this, value);
+	}
 
-  public String getBrokerID() {
-    return ctpJNI.CThostFtdcBrokerTradingAlgosField_BrokerID_get(swigCPtr, this);
-  }
+	public String getBrokerID()
+	{
+		return ctpJNI.CThostFtdcBrokerTradingAlgosField_BrokerID_get(swigCPtr, this);
+	}
 
-  public void setExchangeID(String value) {
-    ctpJNI.CThostFtdcBrokerTradingAlgosField_ExchangeID_set(swigCPtr, this, value);
-  }
+	public void setExchangeID(String value)
+	{
+		ctpJNI.CThostFtdcBrokerTradingAlgosField_ExchangeID_set(swigCPtr, this, value);
+	}
 
-  public String getExchangeID() {
-    return ctpJNI.CThostFtdcBrokerTradingAlgosField_ExchangeID_get(swigCPtr, this);
-  }
+	public String getExchangeID()
+	{
+		return ctpJNI.CThostFtdcBrokerTradingAlgosField_ExchangeID_get(swigCPtr, this);
+	}
 
-  public void setInstrumentID(String value) {
-    ctpJNI.CThostFtdcBrokerTradingAlgosField_InstrumentID_set(swigCPtr, this, value);
-  }
+	public void setInstrumentID(String value)
+	{
+		ctpJNI.CThostFtdcBrokerTradingAlgosField_InstrumentID_set(swigCPtr, this, value);
+	}
 
-  public String getInstrumentID() {
-    return ctpJNI.CThostFtdcBrokerTradingAlgosField_InstrumentID_get(swigCPtr, this);
-  }
+	public String getInstrumentID()
+	{
+		return ctpJNI.CThostFtdcBrokerTradingAlgosField_InstrumentID_get(swigCPtr, this);
+	}
 
-  public void setHandlePositionAlgoID(char value) {
-    ctpJNI.CThostFtdcBrokerTradingAlgosField_HandlePositionAlgoID_set(swigCPtr, this, value);
-  }
+	public void setHandlePositionAlgoID(char value)
+	{
+		ctpJNI.CThostFtdcBrokerTradingAlgosField_HandlePositionAlgoID_set(swigCPtr, this, value);
+	}
 
-  public char getHandlePositionAlgoID() {
-    return ctpJNI.CThostFtdcBrokerTradingAlgosField_HandlePositionAlgoID_get(swigCPtr, this);
-  }
+	public char getHandlePositionAlgoID()
+	{
+		return ctpJNI.CThostFtdcBrokerTradingAlgosField_HandlePositionAlgoID_get(swigCPtr, this);
+	}
 
-  public void setFindMarginRateAlgoID(char value) {
-    ctpJNI.CThostFtdcBrokerTradingAlgosField_FindMarginRateAlgoID_set(swigCPtr, this, value);
-  }
+	public void setFindMarginRateAlgoID(char value)
+	{
+		ctpJNI.CThostFtdcBrokerTradingAlgosField_FindMarginRateAlgoID_set(swigCPtr, this, value);
+	}
 
-  public char getFindMarginRateAlgoID() {
-    return ctpJNI.CThostFtdcBrokerTradingAlgosField_FindMarginRateAlgoID_get(swigCPtr, this);
-  }
+	public char getFindMarginRateAlgoID()
+	{
+		return ctpJNI.CThostFtdcBrokerTradingAlgosField_FindMarginRateAlgoID_get(swigCPtr, this);
+	}
 
-  public void setHandleTradingAccountAlgoID(char value) {
-    ctpJNI.CThostFtdcBrokerTradingAlgosField_HandleTradingAccountAlgoID_set(swigCPtr, this, value);
-  }
+	public void setHandleTradingAccountAlgoID(char value)
+	{
+		ctpJNI.CThostFtdcBrokerTradingAlgosField_HandleTradingAccountAlgoID_set(swigCPtr, this, value);
+	}
 
-  public char getHandleTradingAccountAlgoID() {
-    return ctpJNI.CThostFtdcBrokerTradingAlgosField_HandleTradingAccountAlgoID_get(swigCPtr, this);
-  }
+	public char getHandleTradingAccountAlgoID()
+	{
+		return ctpJNI.CThostFtdcBrokerTradingAlgosField_HandleTradingAccountAlgoID_get(swigCPtr, this);
+	}
 
-  public CThostFtdcBrokerTradingAlgosField() {
-    this(ctpJNI.new_CThostFtdcBrokerTradingAlgosField(), true);
-  }
-
+	public CThostFtdcBrokerTradingAlgosField()
+	{
+		this(ctpJNI.new_CThostFtdcBrokerTradingAlgosField(), true);
+	}
 }

@@ -5,48 +5,56 @@
  * Do not make changes to this file unless you know what you are doing--modify
  * the SWIG interface file instead.
  * ----------------------------------------------------------------------------- */
-
 package com.ctp.field;
 
-import com.ctp.ctpJNI;
+import com.ctp.swig.ctpJNI;
 
-public class CThostFtdcQryFrontStatusField {
-  private transient long swigCPtr;
-  protected transient boolean swigCMemOwn;
+public class CThostFtdcQryFrontStatusField
+{
+	private transient long swigCPtr;
+	protected transient boolean swigCMemOwn;
 
-  protected CThostFtdcQryFrontStatusField(long cPtr, boolean cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = cPtr;
-  }
+	protected CThostFtdcQryFrontStatusField(long cPtr, boolean cMemoryOwn)
+	{
+		swigCMemOwn = cMemoryOwn;
+		swigCPtr = cPtr;
+	}
 
-  protected static long getCPtr(CThostFtdcQryFrontStatusField obj) {
-    return (obj == null) ? 0 : obj.swigCPtr;
-  }
+	public static long getCPtr(CThostFtdcQryFrontStatusField obj)
+	{
+		return (obj == null) ? 0 : obj.swigCPtr;
+	}
 
-  protected void finalize() {
-    delete();
-  }
+	protected void finalize()
+	{
+		delete();
+	}
 
-  public synchronized void delete() {
-    if (swigCPtr != 0) {
-      if (swigCMemOwn) {
-        swigCMemOwn = false;
-        ctpJNI.delete_CThostFtdcQryFrontStatusField(swigCPtr);
-      }
-      swigCPtr = 0;
-    }
-  }
+	public synchronized void delete()
+	{
+		if (swigCPtr != 0)
+		{
+			if (swigCMemOwn)
+			{
+				swigCMemOwn = false;
+				ctpJNI.delete_CThostFtdcQryFrontStatusField(swigCPtr);
+			}
+			swigCPtr = 0;
+		}
+	}
 
-  public void setFrontID(int value) {
-    ctpJNI.CThostFtdcQryFrontStatusField_FrontID_set(swigCPtr, this, value);
-  }
+	public void setFrontID(int value)
+	{
+		ctpJNI.CThostFtdcQryFrontStatusField_FrontID_set(swigCPtr, this, value);
+	}
 
-  public int getFrontID() {
-    return ctpJNI.CThostFtdcQryFrontStatusField_FrontID_get(swigCPtr, this);
-  }
+	public int getFrontID()
+	{
+		return ctpJNI.CThostFtdcQryFrontStatusField_FrontID_get(swigCPtr, this);
+	}
 
-  public CThostFtdcQryFrontStatusField() {
-    this(ctpJNI.new_CThostFtdcQryFrontStatusField(), true);
-  }
-
+	public CThostFtdcQryFrontStatusField()
+	{
+		this(ctpJNI.new_CThostFtdcQryFrontStatusField(), true);
+	}
 }

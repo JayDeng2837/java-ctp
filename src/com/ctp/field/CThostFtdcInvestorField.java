@@ -5,144 +5,176 @@
  * Do not make changes to this file unless you know what you are doing--modify
  * the SWIG interface file instead.
  * ----------------------------------------------------------------------------- */
-
 package com.ctp.field;
 
-import com.ctp.ctpJNI;
+import com.ctp.swig.ctpJNI;
 
-public class CThostFtdcInvestorField {
-  private transient long swigCPtr;
-  protected transient boolean swigCMemOwn;
+public class CThostFtdcInvestorField
+{
+	private transient long swigCPtr;
+	protected transient boolean swigCMemOwn;
 
-  protected CThostFtdcInvestorField(long cPtr, boolean cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = cPtr;
-  }
+	protected CThostFtdcInvestorField(long cPtr, boolean cMemoryOwn)
+	{
+		swigCMemOwn = cMemoryOwn;
+		swigCPtr = cPtr;
+	}
 
-  protected static long getCPtr(CThostFtdcInvestorField obj) {
-    return (obj == null) ? 0 : obj.swigCPtr;
-  }
+	public static long getCPtr(CThostFtdcInvestorField obj)
+	{
+		return (obj == null) ? 0 : obj.swigCPtr;
+	}
 
-  protected void finalize() {
-    delete();
-  }
+	protected void finalize()
+	{
+		delete();
+	}
 
-  public synchronized void delete() {
-    if (swigCPtr != 0) {
-      if (swigCMemOwn) {
-        swigCMemOwn = false;
-        ctpJNI.delete_CThostFtdcInvestorField(swigCPtr);
-      }
-      swigCPtr = 0;
-    }
-  }
+	public synchronized void delete()
+	{
+		if (swigCPtr != 0)
+		{
+			if (swigCMemOwn)
+			{
+				swigCMemOwn = false;
+				ctpJNI.delete_CThostFtdcInvestorField(swigCPtr);
+			}
+			swigCPtr = 0;
+		}
+	}
 
-  public void setInvestorID(String value) {
-    ctpJNI.CThostFtdcInvestorField_InvestorID_set(swigCPtr, this, value);
-  }
+	public void setInvestorID(String value)
+	{
+		ctpJNI.CThostFtdcInvestorField_InvestorID_set(swigCPtr, this, value);
+	}
 
-  public String getInvestorID() {
-    return ctpJNI.CThostFtdcInvestorField_InvestorID_get(swigCPtr, this);
-  }
+	public String getInvestorID()
+	{
+		return ctpJNI.CThostFtdcInvestorField_InvestorID_get(swigCPtr, this);
+	}
 
-  public void setBrokerID(String value) {
-    ctpJNI.CThostFtdcInvestorField_BrokerID_set(swigCPtr, this, value);
-  }
+	public void setBrokerID(String value)
+	{
+		ctpJNI.CThostFtdcInvestorField_BrokerID_set(swigCPtr, this, value);
+	}
 
-  public String getBrokerID() {
-    return ctpJNI.CThostFtdcInvestorField_BrokerID_get(swigCPtr, this);
-  }
+	public String getBrokerID()
+	{
+		return ctpJNI.CThostFtdcInvestorField_BrokerID_get(swigCPtr, this);
+	}
 
-  public void setInvestorGroupID(String value) {
-    ctpJNI.CThostFtdcInvestorField_InvestorGroupID_set(swigCPtr, this, value);
-  }
+	public void setInvestorGroupID(String value)
+	{
+		ctpJNI.CThostFtdcInvestorField_InvestorGroupID_set(swigCPtr, this, value);
+	}
 
-  public String getInvestorGroupID() {
-    return ctpJNI.CThostFtdcInvestorField_InvestorGroupID_get(swigCPtr, this);
-  }
+	public String getInvestorGroupID()
+	{
+		return ctpJNI.CThostFtdcInvestorField_InvestorGroupID_get(swigCPtr, this);
+	}
 
-  public void setInvestorName(String value) {
-    ctpJNI.CThostFtdcInvestorField_InvestorName_set(swigCPtr, this, value);
-  }
+	public void setInvestorName(String value)
+	{
+		ctpJNI.CThostFtdcInvestorField_InvestorName_set(swigCPtr, this, value);
+	}
 
-  public String getInvestorName() {
-    return ctpJNI.CThostFtdcInvestorField_InvestorName_get(swigCPtr, this);
-  }
+	public String getInvestorName()
+	{
+		return ctpJNI.CThostFtdcInvestorField_InvestorName_get(swigCPtr, this);
+	}
 
-  public void setIdentifiedCardType(char value) {
-    ctpJNI.CThostFtdcInvestorField_IdentifiedCardType_set(swigCPtr, this, value);
-  }
+	public void setIdentifiedCardType(char value)
+	{
+		ctpJNI.CThostFtdcInvestorField_IdentifiedCardType_set(swigCPtr, this, value);
+	}
 
-  public char getIdentifiedCardType() {
-    return ctpJNI.CThostFtdcInvestorField_IdentifiedCardType_get(swigCPtr, this);
-  }
+	public char getIdentifiedCardType()
+	{
+		return ctpJNI.CThostFtdcInvestorField_IdentifiedCardType_get(swigCPtr, this);
+	}
 
-  public void setIdentifiedCardNo(String value) {
-    ctpJNI.CThostFtdcInvestorField_IdentifiedCardNo_set(swigCPtr, this, value);
-  }
+	public void setIdentifiedCardNo(String value)
+	{
+		ctpJNI.CThostFtdcInvestorField_IdentifiedCardNo_set(swigCPtr, this, value);
+	}
 
-  public String getIdentifiedCardNo() {
-    return ctpJNI.CThostFtdcInvestorField_IdentifiedCardNo_get(swigCPtr, this);
-  }
+	public String getIdentifiedCardNo()
+	{
+		return ctpJNI.CThostFtdcInvestorField_IdentifiedCardNo_get(swigCPtr, this);
+	}
 
-  public void setIsActive(int value) {
-    ctpJNI.CThostFtdcInvestorField_IsActive_set(swigCPtr, this, value);
-  }
+	public void setIsActive(int value)
+	{
+		ctpJNI.CThostFtdcInvestorField_IsActive_set(swigCPtr, this, value);
+	}
 
-  public int getIsActive() {
-    return ctpJNI.CThostFtdcInvestorField_IsActive_get(swigCPtr, this);
-  }
+	public int getIsActive()
+	{
+		return ctpJNI.CThostFtdcInvestorField_IsActive_get(swigCPtr, this);
+	}
 
-  public void setTelephone(String value) {
-    ctpJNI.CThostFtdcInvestorField_Telephone_set(swigCPtr, this, value);
-  }
+	public void setTelephone(String value)
+	{
+		ctpJNI.CThostFtdcInvestorField_Telephone_set(swigCPtr, this, value);
+	}
 
-  public String getTelephone() {
-    return ctpJNI.CThostFtdcInvestorField_Telephone_get(swigCPtr, this);
-  }
+	public String getTelephone()
+	{
+		return ctpJNI.CThostFtdcInvestorField_Telephone_get(swigCPtr, this);
+	}
 
-  public void setAddress(String value) {
-    ctpJNI.CThostFtdcInvestorField_Address_set(swigCPtr, this, value);
-  }
+	public void setAddress(String value)
+	{
+		ctpJNI.CThostFtdcInvestorField_Address_set(swigCPtr, this, value);
+	}
 
-  public String getAddress() {
-    return ctpJNI.CThostFtdcInvestorField_Address_get(swigCPtr, this);
-  }
+	public String getAddress()
+	{
+		return ctpJNI.CThostFtdcInvestorField_Address_get(swigCPtr, this);
+	}
 
-  public void setOpenDate(String value) {
-    ctpJNI.CThostFtdcInvestorField_OpenDate_set(swigCPtr, this, value);
-  }
+	public void setOpenDate(String value)
+	{
+		ctpJNI.CThostFtdcInvestorField_OpenDate_set(swigCPtr, this, value);
+	}
 
-  public String getOpenDate() {
-    return ctpJNI.CThostFtdcInvestorField_OpenDate_get(swigCPtr, this);
-  }
+	public String getOpenDate()
+	{
+		return ctpJNI.CThostFtdcInvestorField_OpenDate_get(swigCPtr, this);
+	}
 
-  public void setMobile(String value) {
-    ctpJNI.CThostFtdcInvestorField_Mobile_set(swigCPtr, this, value);
-  }
+	public void setMobile(String value)
+	{
+		ctpJNI.CThostFtdcInvestorField_Mobile_set(swigCPtr, this, value);
+	}
 
-  public String getMobile() {
-    return ctpJNI.CThostFtdcInvestorField_Mobile_get(swigCPtr, this);
-  }
+	public String getMobile()
+	{
+		return ctpJNI.CThostFtdcInvestorField_Mobile_get(swigCPtr, this);
+	}
 
-  public void setCommModelID(String value) {
-    ctpJNI.CThostFtdcInvestorField_CommModelID_set(swigCPtr, this, value);
-  }
+	public void setCommModelID(String value)
+	{
+		ctpJNI.CThostFtdcInvestorField_CommModelID_set(swigCPtr, this, value);
+	}
 
-  public String getCommModelID() {
-    return ctpJNI.CThostFtdcInvestorField_CommModelID_get(swigCPtr, this);
-  }
+	public String getCommModelID()
+	{
+		return ctpJNI.CThostFtdcInvestorField_CommModelID_get(swigCPtr, this);
+	}
 
-  public void setMarginModelID(String value) {
-    ctpJNI.CThostFtdcInvestorField_MarginModelID_set(swigCPtr, this, value);
-  }
+	public void setMarginModelID(String value)
+	{
+		ctpJNI.CThostFtdcInvestorField_MarginModelID_set(swigCPtr, this, value);
+	}
 
-  public String getMarginModelID() {
-    return ctpJNI.CThostFtdcInvestorField_MarginModelID_get(swigCPtr, this);
-  }
+	public String getMarginModelID()
+	{
+		return ctpJNI.CThostFtdcInvestorField_MarginModelID_get(swigCPtr, this);
+	}
 
-  public CThostFtdcInvestorField() {
-    this(ctpJNI.new_CThostFtdcInvestorField(), true);
-  }
-
+	public CThostFtdcInvestorField()
+	{
+		this(ctpJNI.new_CThostFtdcInvestorField(), true);
+	}
 }

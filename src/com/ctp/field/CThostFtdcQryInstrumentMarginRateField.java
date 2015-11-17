@@ -5,72 +5,86 @@
  * Do not make changes to this file unless you know what you are doing--modify
  * the SWIG interface file instead.
  * ----------------------------------------------------------------------------- */
-
 package com.ctp.field;
 
-import com.ctp.ctpJNI;
+import com.ctp.swig.ctpJNI;
 
-public class CThostFtdcQryInstrumentMarginRateField {
-  private transient long swigCPtr;
-  protected transient boolean swigCMemOwn;
+public class CThostFtdcQryInstrumentMarginRateField
+{
+	private transient long swigCPtr;
+	protected transient boolean swigCMemOwn;
 
-  protected CThostFtdcQryInstrumentMarginRateField(long cPtr, boolean cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = cPtr;
-  }
+	protected CThostFtdcQryInstrumentMarginRateField(long cPtr, boolean cMemoryOwn)
+	{
+		swigCMemOwn = cMemoryOwn;
+		swigCPtr = cPtr;
+	}
 
-  protected static long getCPtr(CThostFtdcQryInstrumentMarginRateField obj) {
-    return (obj == null) ? 0 : obj.swigCPtr;
-  }
+	public static long getCPtr(CThostFtdcQryInstrumentMarginRateField obj)
+	{
+		return (obj == null) ? 0 : obj.swigCPtr;
+	}
 
-  protected void finalize() {
-    delete();
-  }
+	protected void finalize()
+	{
+		delete();
+	}
 
-  public synchronized void delete() {
-    if (swigCPtr != 0) {
-      if (swigCMemOwn) {
-        swigCMemOwn = false;
-        ctpJNI.delete_CThostFtdcQryInstrumentMarginRateField(swigCPtr);
-      }
-      swigCPtr = 0;
-    }
-  }
+	public synchronized void delete()
+	{
+		if (swigCPtr != 0)
+		{
+			if (swigCMemOwn)
+			{
+				swigCMemOwn = false;
+				ctpJNI.delete_CThostFtdcQryInstrumentMarginRateField(swigCPtr);
+			}
+			swigCPtr = 0;
+		}
+	}
 
-  public void setBrokerID(String value) {
-    ctpJNI.CThostFtdcQryInstrumentMarginRateField_BrokerID_set(swigCPtr, this, value);
-  }
+	public void setBrokerID(String value)
+	{
+		ctpJNI.CThostFtdcQryInstrumentMarginRateField_BrokerID_set(swigCPtr, this, value);
+	}
 
-  public String getBrokerID() {
-    return ctpJNI.CThostFtdcQryInstrumentMarginRateField_BrokerID_get(swigCPtr, this);
-  }
+	public String getBrokerID()
+	{
+		return ctpJNI.CThostFtdcQryInstrumentMarginRateField_BrokerID_get(swigCPtr, this);
+	}
 
-  public void setInvestorID(String value) {
-    ctpJNI.CThostFtdcQryInstrumentMarginRateField_InvestorID_set(swigCPtr, this, value);
-  }
+	public void setInvestorID(String value)
+	{
+		ctpJNI.CThostFtdcQryInstrumentMarginRateField_InvestorID_set(swigCPtr, this, value);
+	}
 
-  public String getInvestorID() {
-    return ctpJNI.CThostFtdcQryInstrumentMarginRateField_InvestorID_get(swigCPtr, this);
-  }
+	public String getInvestorID()
+	{
+		return ctpJNI.CThostFtdcQryInstrumentMarginRateField_InvestorID_get(swigCPtr, this);
+	}
 
-  public void setInstrumentID(String value) {
-    ctpJNI.CThostFtdcQryInstrumentMarginRateField_InstrumentID_set(swigCPtr, this, value);
-  }
+	public void setInstrumentID(String value)
+	{
+		ctpJNI.CThostFtdcQryInstrumentMarginRateField_InstrumentID_set(swigCPtr, this, value);
+	}
 
-  public String getInstrumentID() {
-    return ctpJNI.CThostFtdcQryInstrumentMarginRateField_InstrumentID_get(swigCPtr, this);
-  }
+	public String getInstrumentID()
+	{
+		return ctpJNI.CThostFtdcQryInstrumentMarginRateField_InstrumentID_get(swigCPtr, this);
+	}
 
-  public void setHedgeFlag(char value) {
-    ctpJNI.CThostFtdcQryInstrumentMarginRateField_HedgeFlag_set(swigCPtr, this, value);
-  }
+	public void setHedgeFlag(char value)
+	{
+		ctpJNI.CThostFtdcQryInstrumentMarginRateField_HedgeFlag_set(swigCPtr, this, value);
+	}
 
-  public char getHedgeFlag() {
-    return ctpJNI.CThostFtdcQryInstrumentMarginRateField_HedgeFlag_get(swigCPtr, this);
-  }
+	public char getHedgeFlag()
+	{
+		return ctpJNI.CThostFtdcQryInstrumentMarginRateField_HedgeFlag_get(swigCPtr, this);
+	}
 
-  public CThostFtdcQryInstrumentMarginRateField() {
-    this(ctpJNI.new_CThostFtdcQryInstrumentMarginRateField(), true);
-  }
-
+	public CThostFtdcQryInstrumentMarginRateField()
+	{
+		this(ctpJNI.new_CThostFtdcQryInstrumentMarginRateField(), true);
+	}
 }

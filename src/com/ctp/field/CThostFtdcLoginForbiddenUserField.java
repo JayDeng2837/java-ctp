@@ -5,64 +5,76 @@
  * Do not make changes to this file unless you know what you are doing--modify
  * the SWIG interface file instead.
  * ----------------------------------------------------------------------------- */
-
 package com.ctp.field;
 
-import com.ctp.ctpJNI;
+import com.ctp.swig.ctpJNI;
 
-public class CThostFtdcLoginForbiddenUserField {
-  private transient long swigCPtr;
-  protected transient boolean swigCMemOwn;
+public class CThostFtdcLoginForbiddenUserField
+{
+	private transient long swigCPtr;
+	protected transient boolean swigCMemOwn;
 
-  protected CThostFtdcLoginForbiddenUserField(long cPtr, boolean cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = cPtr;
-  }
+	protected CThostFtdcLoginForbiddenUserField(long cPtr, boolean cMemoryOwn)
+	{
+		swigCMemOwn = cMemoryOwn;
+		swigCPtr = cPtr;
+	}
 
-  protected static long getCPtr(CThostFtdcLoginForbiddenUserField obj) {
-    return (obj == null) ? 0 : obj.swigCPtr;
-  }
+	public static long getCPtr(CThostFtdcLoginForbiddenUserField obj)
+	{
+		return (obj == null) ? 0 : obj.swigCPtr;
+	}
 
-  protected void finalize() {
-    delete();
-  }
+	protected void finalize()
+	{
+		delete();
+	}
 
-  public synchronized void delete() {
-    if (swigCPtr != 0) {
-      if (swigCMemOwn) {
-        swigCMemOwn = false;
-        ctpJNI.delete_CThostFtdcLoginForbiddenUserField(swigCPtr);
-      }
-      swigCPtr = 0;
-    }
-  }
+	public synchronized void delete()
+	{
+		if (swigCPtr != 0)
+		{
+			if (swigCMemOwn)
+			{
+				swigCMemOwn = false;
+				ctpJNI.delete_CThostFtdcLoginForbiddenUserField(swigCPtr);
+			}
+			swigCPtr = 0;
+		}
+	}
 
-  public void setBrokerID(String value) {
-    ctpJNI.CThostFtdcLoginForbiddenUserField_BrokerID_set(swigCPtr, this, value);
-  }
+	public void setBrokerID(String value)
+	{
+		ctpJNI.CThostFtdcLoginForbiddenUserField_BrokerID_set(swigCPtr, this, value);
+	}
 
-  public String getBrokerID() {
-    return ctpJNI.CThostFtdcLoginForbiddenUserField_BrokerID_get(swigCPtr, this);
-  }
+	public String getBrokerID()
+	{
+		return ctpJNI.CThostFtdcLoginForbiddenUserField_BrokerID_get(swigCPtr, this);
+	}
 
-  public void setUserID(String value) {
-    ctpJNI.CThostFtdcLoginForbiddenUserField_UserID_set(swigCPtr, this, value);
-  }
+	public void setUserID(String value)
+	{
+		ctpJNI.CThostFtdcLoginForbiddenUserField_UserID_set(swigCPtr, this, value);
+	}
 
-  public String getUserID() {
-    return ctpJNI.CThostFtdcLoginForbiddenUserField_UserID_get(swigCPtr, this);
-  }
+	public String getUserID()
+	{
+		return ctpJNI.CThostFtdcLoginForbiddenUserField_UserID_get(swigCPtr, this);
+	}
 
-  public void setIPAddress(String value) {
-    ctpJNI.CThostFtdcLoginForbiddenUserField_IPAddress_set(swigCPtr, this, value);
-  }
+	public void setIPAddress(String value)
+	{
+		ctpJNI.CThostFtdcLoginForbiddenUserField_IPAddress_set(swigCPtr, this, value);
+	}
 
-  public String getIPAddress() {
-    return ctpJNI.CThostFtdcLoginForbiddenUserField_IPAddress_get(swigCPtr, this);
-  }
+	public String getIPAddress()
+	{
+		return ctpJNI.CThostFtdcLoginForbiddenUserField_IPAddress_get(swigCPtr, this);
+	}
 
-  public CThostFtdcLoginForbiddenUserField() {
-    this(ctpJNI.new_CThostFtdcLoginForbiddenUserField(), true);
-  }
-
+	public CThostFtdcLoginForbiddenUserField()
+	{
+		this(ctpJNI.new_CThostFtdcLoginForbiddenUserField(), true);
+	}
 }

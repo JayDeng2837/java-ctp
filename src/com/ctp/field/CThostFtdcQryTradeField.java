@@ -5,96 +5,116 @@
  * Do not make changes to this file unless you know what you are doing--modify
  * the SWIG interface file instead.
  * ----------------------------------------------------------------------------- */
-
 package com.ctp.field;
 
-import com.ctp.ctpJNI;
+import com.ctp.swig.ctpJNI;
 
-public class CThostFtdcQryTradeField {
-  private transient long swigCPtr;
-  protected transient boolean swigCMemOwn;
+public class CThostFtdcQryTradeField
+{
+	private transient long swigCPtr;
+	protected transient boolean swigCMemOwn;
 
-  protected CThostFtdcQryTradeField(long cPtr, boolean cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = cPtr;
-  }
+	protected CThostFtdcQryTradeField(long cPtr, boolean cMemoryOwn)
+	{
+		swigCMemOwn = cMemoryOwn;
+		swigCPtr = cPtr;
+	}
 
-  protected static long getCPtr(CThostFtdcQryTradeField obj) {
-    return (obj == null) ? 0 : obj.swigCPtr;
-  }
+	public static long getCPtr(CThostFtdcQryTradeField obj)
+	{
+		return (obj == null) ? 0 : obj.swigCPtr;
+	}
 
-  protected void finalize() {
-    delete();
-  }
+	protected void finalize()
+	{
+		delete();
+	}
 
-  public synchronized void delete() {
-    if (swigCPtr != 0) {
-      if (swigCMemOwn) {
-        swigCMemOwn = false;
-        ctpJNI.delete_CThostFtdcQryTradeField(swigCPtr);
-      }
-      swigCPtr = 0;
-    }
-  }
+	public synchronized void delete()
+	{
+		if (swigCPtr != 0)
+		{
+			if (swigCMemOwn)
+			{
+				swigCMemOwn = false;
+				ctpJNI.delete_CThostFtdcQryTradeField(swigCPtr);
+			}
+			swigCPtr = 0;
+		}
+	}
 
-  public void setBrokerID(String value) {
-    ctpJNI.CThostFtdcQryTradeField_BrokerID_set(swigCPtr, this, value);
-  }
+	public void setBrokerID(String value)
+	{
+		ctpJNI.CThostFtdcQryTradeField_BrokerID_set(swigCPtr, this, value);
+	}
 
-  public String getBrokerID() {
-    return ctpJNI.CThostFtdcQryTradeField_BrokerID_get(swigCPtr, this);
-  }
+	public String getBrokerID()
+	{
+		return ctpJNI.CThostFtdcQryTradeField_BrokerID_get(swigCPtr, this);
+	}
 
-  public void setInvestorID(String value) {
-    ctpJNI.CThostFtdcQryTradeField_InvestorID_set(swigCPtr, this, value);
-  }
+	public void setInvestorID(String value)
+	{
+		ctpJNI.CThostFtdcQryTradeField_InvestorID_set(swigCPtr, this, value);
+	}
 
-  public String getInvestorID() {
-    return ctpJNI.CThostFtdcQryTradeField_InvestorID_get(swigCPtr, this);
-  }
+	public String getInvestorID()
+	{
+		return ctpJNI.CThostFtdcQryTradeField_InvestorID_get(swigCPtr, this);
+	}
 
-  public void setInstrumentID(String value) {
-    ctpJNI.CThostFtdcQryTradeField_InstrumentID_set(swigCPtr, this, value);
-  }
+	public void setInstrumentID(String value)
+	{
+		ctpJNI.CThostFtdcQryTradeField_InstrumentID_set(swigCPtr, this, value);
+	}
 
-  public String getInstrumentID() {
-    return ctpJNI.CThostFtdcQryTradeField_InstrumentID_get(swigCPtr, this);
-  }
+	public String getInstrumentID()
+	{
+		return ctpJNI.CThostFtdcQryTradeField_InstrumentID_get(swigCPtr, this);
+	}
 
-  public void setExchangeID(String value) {
-    ctpJNI.CThostFtdcQryTradeField_ExchangeID_set(swigCPtr, this, value);
-  }
+	public void setExchangeID(String value)
+	{
+		ctpJNI.CThostFtdcQryTradeField_ExchangeID_set(swigCPtr, this, value);
+	}
 
-  public String getExchangeID() {
-    return ctpJNI.CThostFtdcQryTradeField_ExchangeID_get(swigCPtr, this);
-  }
+	public String getExchangeID()
+	{
+		return ctpJNI.CThostFtdcQryTradeField_ExchangeID_get(swigCPtr, this);
+	}
 
-  public void setTradeID(String value) {
-    ctpJNI.CThostFtdcQryTradeField_TradeID_set(swigCPtr, this, value);
-  }
+	public void setTradeID(String value)
+	{
+		ctpJNI.CThostFtdcQryTradeField_TradeID_set(swigCPtr, this, value);
+	}
 
-  public String getTradeID() {
-    return ctpJNI.CThostFtdcQryTradeField_TradeID_get(swigCPtr, this);
-  }
+	public String getTradeID()
+	{
+		return ctpJNI.CThostFtdcQryTradeField_TradeID_get(swigCPtr, this);
+	}
 
-  public void setTradeTimeStart(String value) {
-    ctpJNI.CThostFtdcQryTradeField_TradeTimeStart_set(swigCPtr, this, value);
-  }
+	public void setTradeTimeStart(String value)
+	{
+		ctpJNI.CThostFtdcQryTradeField_TradeTimeStart_set(swigCPtr, this, value);
+	}
 
-  public String getTradeTimeStart() {
-    return ctpJNI.CThostFtdcQryTradeField_TradeTimeStart_get(swigCPtr, this);
-  }
+	public String getTradeTimeStart()
+	{
+		return ctpJNI.CThostFtdcQryTradeField_TradeTimeStart_get(swigCPtr, this);
+	}
 
-  public void setTradeTimeEnd(String value) {
-    ctpJNI.CThostFtdcQryTradeField_TradeTimeEnd_set(swigCPtr, this, value);
-  }
+	public void setTradeTimeEnd(String value)
+	{
+		ctpJNI.CThostFtdcQryTradeField_TradeTimeEnd_set(swigCPtr, this, value);
+	}
 
-  public String getTradeTimeEnd() {
-    return ctpJNI.CThostFtdcQryTradeField_TradeTimeEnd_get(swigCPtr, this);
-  }
+	public String getTradeTimeEnd()
+	{
+		return ctpJNI.CThostFtdcQryTradeField_TradeTimeEnd_get(swigCPtr, this);
+	}
 
-  public CThostFtdcQryTradeField() {
-    this(ctpJNI.new_CThostFtdcQryTradeField(), true);
-  }
-
+	public CThostFtdcQryTradeField()
+	{
+		this(ctpJNI.new_CThostFtdcQryTradeField(), true);
+	}
 }

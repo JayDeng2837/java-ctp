@@ -5,72 +5,86 @@
  * Do not make changes to this file unless you know what you are doing--modify
  * the SWIG interface file instead.
  * ----------------------------------------------------------------------------- */
-
 package com.ctp.field;
 
-import com.ctp.ctpJNI;
+import com.ctp.swig.ctpJNI;
 
-public class CThostFtdcQryExchangeOrderActionField {
-  private transient long swigCPtr;
-  protected transient boolean swigCMemOwn;
+public class CThostFtdcQryExchangeOrderActionField
+{
+	private transient long swigCPtr;
+	protected transient boolean swigCMemOwn;
 
-  protected CThostFtdcQryExchangeOrderActionField(long cPtr, boolean cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = cPtr;
-  }
+	protected CThostFtdcQryExchangeOrderActionField(long cPtr, boolean cMemoryOwn)
+	{
+		swigCMemOwn = cMemoryOwn;
+		swigCPtr = cPtr;
+	}
 
-  protected static long getCPtr(CThostFtdcQryExchangeOrderActionField obj) {
-    return (obj == null) ? 0 : obj.swigCPtr;
-  }
+	public static long getCPtr(CThostFtdcQryExchangeOrderActionField obj)
+	{
+		return (obj == null) ? 0 : obj.swigCPtr;
+	}
 
-  protected void finalize() {
-    delete();
-  }
+	protected void finalize()
+	{
+		delete();
+	}
 
-  public synchronized void delete() {
-    if (swigCPtr != 0) {
-      if (swigCMemOwn) {
-        swigCMemOwn = false;
-        ctpJNI.delete_CThostFtdcQryExchangeOrderActionField(swigCPtr);
-      }
-      swigCPtr = 0;
-    }
-  }
+	public synchronized void delete()
+	{
+		if (swigCPtr != 0)
+		{
+			if (swigCMemOwn)
+			{
+				swigCMemOwn = false;
+				ctpJNI.delete_CThostFtdcQryExchangeOrderActionField(swigCPtr);
+			}
+			swigCPtr = 0;
+		}
+	}
 
-  public void setParticipantID(String value) {
-    ctpJNI.CThostFtdcQryExchangeOrderActionField_ParticipantID_set(swigCPtr, this, value);
-  }
+	public void setParticipantID(String value)
+	{
+		ctpJNI.CThostFtdcQryExchangeOrderActionField_ParticipantID_set(swigCPtr, this, value);
+	}
 
-  public String getParticipantID() {
-    return ctpJNI.CThostFtdcQryExchangeOrderActionField_ParticipantID_get(swigCPtr, this);
-  }
+	public String getParticipantID()
+	{
+		return ctpJNI.CThostFtdcQryExchangeOrderActionField_ParticipantID_get(swigCPtr, this);
+	}
 
-  public void setClientID(String value) {
-    ctpJNI.CThostFtdcQryExchangeOrderActionField_ClientID_set(swigCPtr, this, value);
-  }
+	public void setClientID(String value)
+	{
+		ctpJNI.CThostFtdcQryExchangeOrderActionField_ClientID_set(swigCPtr, this, value);
+	}
 
-  public String getClientID() {
-    return ctpJNI.CThostFtdcQryExchangeOrderActionField_ClientID_get(swigCPtr, this);
-  }
+	public String getClientID()
+	{
+		return ctpJNI.CThostFtdcQryExchangeOrderActionField_ClientID_get(swigCPtr, this);
+	}
 
-  public void setExchangeID(String value) {
-    ctpJNI.CThostFtdcQryExchangeOrderActionField_ExchangeID_set(swigCPtr, this, value);
-  }
+	public void setExchangeID(String value)
+	{
+		ctpJNI.CThostFtdcQryExchangeOrderActionField_ExchangeID_set(swigCPtr, this, value);
+	}
 
-  public String getExchangeID() {
-    return ctpJNI.CThostFtdcQryExchangeOrderActionField_ExchangeID_get(swigCPtr, this);
-  }
+	public String getExchangeID()
+	{
+		return ctpJNI.CThostFtdcQryExchangeOrderActionField_ExchangeID_get(swigCPtr, this);
+	}
 
-  public void setTraderID(String value) {
-    ctpJNI.CThostFtdcQryExchangeOrderActionField_TraderID_set(swigCPtr, this, value);
-  }
+	public void setTraderID(String value)
+	{
+		ctpJNI.CThostFtdcQryExchangeOrderActionField_TraderID_set(swigCPtr, this, value);
+	}
 
-  public String getTraderID() {
-    return ctpJNI.CThostFtdcQryExchangeOrderActionField_TraderID_get(swigCPtr, this);
-  }
+	public String getTraderID()
+	{
+		return ctpJNI.CThostFtdcQryExchangeOrderActionField_TraderID_get(swigCPtr, this);
+	}
 
-  public CThostFtdcQryExchangeOrderActionField() {
-    this(ctpJNI.new_CThostFtdcQryExchangeOrderActionField(), true);
-  }
-
+	public CThostFtdcQryExchangeOrderActionField()
+	{
+		this(ctpJNI.new_CThostFtdcQryExchangeOrderActionField(), true);
+	}
 }

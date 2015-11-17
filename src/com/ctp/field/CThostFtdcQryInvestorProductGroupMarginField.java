@@ -5,72 +5,86 @@
  * Do not make changes to this file unless you know what you are doing--modify
  * the SWIG interface file instead.
  * ----------------------------------------------------------------------------- */
-
 package com.ctp.field;
 
-import com.ctp.ctpJNI;
+import com.ctp.swig.ctpJNI;
 
-public class CThostFtdcQryInvestorProductGroupMarginField {
-  private transient long swigCPtr;
-  protected transient boolean swigCMemOwn;
+public class CThostFtdcQryInvestorProductGroupMarginField
+{
+	private transient long swigCPtr;
+	protected transient boolean swigCMemOwn;
 
-  protected CThostFtdcQryInvestorProductGroupMarginField(long cPtr, boolean cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = cPtr;
-  }
+	protected CThostFtdcQryInvestorProductGroupMarginField(long cPtr, boolean cMemoryOwn)
+	{
+		swigCMemOwn = cMemoryOwn;
+		swigCPtr = cPtr;
+	}
 
-  protected static long getCPtr(CThostFtdcQryInvestorProductGroupMarginField obj) {
-    return (obj == null) ? 0 : obj.swigCPtr;
-  }
+	public static long getCPtr(CThostFtdcQryInvestorProductGroupMarginField obj)
+	{
+		return (obj == null) ? 0 : obj.swigCPtr;
+	}
 
-  protected void finalize() {
-    delete();
-  }
+	protected void finalize()
+	{
+		delete();
+	}
 
-  public synchronized void delete() {
-    if (swigCPtr != 0) {
-      if (swigCMemOwn) {
-        swigCMemOwn = false;
-        ctpJNI.delete_CThostFtdcQryInvestorProductGroupMarginField(swigCPtr);
-      }
-      swigCPtr = 0;
-    }
-  }
+	public synchronized void delete()
+	{
+		if (swigCPtr != 0)
+		{
+			if (swigCMemOwn)
+			{
+				swigCMemOwn = false;
+				ctpJNI.delete_CThostFtdcQryInvestorProductGroupMarginField(swigCPtr);
+			}
+			swigCPtr = 0;
+		}
+	}
 
-  public void setBrokerID(String value) {
-    ctpJNI.CThostFtdcQryInvestorProductGroupMarginField_BrokerID_set(swigCPtr, this, value);
-  }
+	public void setBrokerID(String value)
+	{
+		ctpJNI.CThostFtdcQryInvestorProductGroupMarginField_BrokerID_set(swigCPtr, this, value);
+	}
 
-  public String getBrokerID() {
-    return ctpJNI.CThostFtdcQryInvestorProductGroupMarginField_BrokerID_get(swigCPtr, this);
-  }
+	public String getBrokerID()
+	{
+		return ctpJNI.CThostFtdcQryInvestorProductGroupMarginField_BrokerID_get(swigCPtr, this);
+	}
 
-  public void setInvestorID(String value) {
-    ctpJNI.CThostFtdcQryInvestorProductGroupMarginField_InvestorID_set(swigCPtr, this, value);
-  }
+	public void setInvestorID(String value)
+	{
+		ctpJNI.CThostFtdcQryInvestorProductGroupMarginField_InvestorID_set(swigCPtr, this, value);
+	}
 
-  public String getInvestorID() {
-    return ctpJNI.CThostFtdcQryInvestorProductGroupMarginField_InvestorID_get(swigCPtr, this);
-  }
+	public String getInvestorID()
+	{
+		return ctpJNI.CThostFtdcQryInvestorProductGroupMarginField_InvestorID_get(swigCPtr, this);
+	}
 
-  public void setProductGroupID(String value) {
-    ctpJNI.CThostFtdcQryInvestorProductGroupMarginField_ProductGroupID_set(swigCPtr, this, value);
-  }
+	public void setProductGroupID(String value)
+	{
+		ctpJNI.CThostFtdcQryInvestorProductGroupMarginField_ProductGroupID_set(swigCPtr, this, value);
+	}
 
-  public String getProductGroupID() {
-    return ctpJNI.CThostFtdcQryInvestorProductGroupMarginField_ProductGroupID_get(swigCPtr, this);
-  }
+	public String getProductGroupID()
+	{
+		return ctpJNI.CThostFtdcQryInvestorProductGroupMarginField_ProductGroupID_get(swigCPtr, this);
+	}
 
-  public void setHedgeFlag(char value) {
-    ctpJNI.CThostFtdcQryInvestorProductGroupMarginField_HedgeFlag_set(swigCPtr, this, value);
-  }
+	public void setHedgeFlag(char value)
+	{
+		ctpJNI.CThostFtdcQryInvestorProductGroupMarginField_HedgeFlag_set(swigCPtr, this, value);
+	}
 
-  public char getHedgeFlag() {
-    return ctpJNI.CThostFtdcQryInvestorProductGroupMarginField_HedgeFlag_get(swigCPtr, this);
-  }
+	public char getHedgeFlag()
+	{
+		return ctpJNI.CThostFtdcQryInvestorProductGroupMarginField_HedgeFlag_get(swigCPtr, this);
+	}
 
-  public CThostFtdcQryInvestorProductGroupMarginField() {
-    this(ctpJNI.new_CThostFtdcQryInvestorProductGroupMarginField(), true);
-  }
-
+	public CThostFtdcQryInvestorProductGroupMarginField()
+	{
+		this(ctpJNI.new_CThostFtdcQryInvestorProductGroupMarginField(), true);
+	}
 }

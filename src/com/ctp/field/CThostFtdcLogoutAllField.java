@@ -5,64 +5,76 @@
  * Do not make changes to this file unless you know what you are doing--modify
  * the SWIG interface file instead.
  * ----------------------------------------------------------------------------- */
-
 package com.ctp.field;
 
-import com.ctp.ctpJNI;
+import com.ctp.swig.ctpJNI;
 
-public class CThostFtdcLogoutAllField {
-  private transient long swigCPtr;
-  protected transient boolean swigCMemOwn;
+public class CThostFtdcLogoutAllField
+{
+	private transient long swigCPtr;
+	protected transient boolean swigCMemOwn;
 
-  protected CThostFtdcLogoutAllField(long cPtr, boolean cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = cPtr;
-  }
+	protected CThostFtdcLogoutAllField(long cPtr, boolean cMemoryOwn)
+	{
+		swigCMemOwn = cMemoryOwn;
+		swigCPtr = cPtr;
+	}
 
-  protected static long getCPtr(CThostFtdcLogoutAllField obj) {
-    return (obj == null) ? 0 : obj.swigCPtr;
-  }
+	public static long getCPtr(CThostFtdcLogoutAllField obj)
+	{
+		return (obj == null) ? 0 : obj.swigCPtr;
+	}
 
-  protected void finalize() {
-    delete();
-  }
+	protected void finalize()
+	{
+		delete();
+	}
 
-  public synchronized void delete() {
-    if (swigCPtr != 0) {
-      if (swigCMemOwn) {
-        swigCMemOwn = false;
-        ctpJNI.delete_CThostFtdcLogoutAllField(swigCPtr);
-      }
-      swigCPtr = 0;
-    }
-  }
+	public synchronized void delete()
+	{
+		if (swigCPtr != 0)
+		{
+			if (swigCMemOwn)
+			{
+				swigCMemOwn = false;
+				ctpJNI.delete_CThostFtdcLogoutAllField(swigCPtr);
+			}
+			swigCPtr = 0;
+		}
+	}
 
-  public void setFrontID(int value) {
-    ctpJNI.CThostFtdcLogoutAllField_FrontID_set(swigCPtr, this, value);
-  }
+	public void setFrontID(int value)
+	{
+		ctpJNI.CThostFtdcLogoutAllField_FrontID_set(swigCPtr, this, value);
+	}
 
-  public int getFrontID() {
-    return ctpJNI.CThostFtdcLogoutAllField_FrontID_get(swigCPtr, this);
-  }
+	public int getFrontID()
+	{
+		return ctpJNI.CThostFtdcLogoutAllField_FrontID_get(swigCPtr, this);
+	}
 
-  public void setSessionID(int value) {
-    ctpJNI.CThostFtdcLogoutAllField_SessionID_set(swigCPtr, this, value);
-  }
+	public void setSessionID(int value)
+	{
+		ctpJNI.CThostFtdcLogoutAllField_SessionID_set(swigCPtr, this, value);
+	}
 
-  public int getSessionID() {
-    return ctpJNI.CThostFtdcLogoutAllField_SessionID_get(swigCPtr, this);
-  }
+	public int getSessionID()
+	{
+		return ctpJNI.CThostFtdcLogoutAllField_SessionID_get(swigCPtr, this);
+	}
 
-  public void setSystemName(String value) {
-    ctpJNI.CThostFtdcLogoutAllField_SystemName_set(swigCPtr, this, value);
-  }
+	public void setSystemName(String value)
+	{
+		ctpJNI.CThostFtdcLogoutAllField_SystemName_set(swigCPtr, this, value);
+	}
 
-  public String getSystemName() {
-    return ctpJNI.CThostFtdcLogoutAllField_SystemName_get(swigCPtr, this);
-  }
+	public String getSystemName()
+	{
+		return ctpJNI.CThostFtdcLogoutAllField_SystemName_get(swigCPtr, this);
+	}
 
-  public CThostFtdcLogoutAllField() {
-    this(ctpJNI.new_CThostFtdcLogoutAllField(), true);
-  }
-
+	public CThostFtdcLogoutAllField()
+	{
+		this(ctpJNI.new_CThostFtdcLogoutAllField(), true);
+	}
 }

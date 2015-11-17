@@ -5,64 +5,76 @@
  * Do not make changes to this file unless you know what you are doing--modify
  * the SWIG interface file instead.
  * ----------------------------------------------------------------------------- */
-
 package com.ctp.field;
 
-import com.ctp.ctpJNI;
+import com.ctp.swig.ctpJNI;
 
-public class CThostFtdcNoticeField {
-  private transient long swigCPtr;
-  protected transient boolean swigCMemOwn;
+public class CThostFtdcNoticeField
+{
+	private transient long swigCPtr;
+	protected transient boolean swigCMemOwn;
 
-  protected CThostFtdcNoticeField(long cPtr, boolean cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = cPtr;
-  }
+	protected CThostFtdcNoticeField(long cPtr, boolean cMemoryOwn)
+	{
+		swigCMemOwn = cMemoryOwn;
+		swigCPtr = cPtr;
+	}
 
-  protected static long getCPtr(CThostFtdcNoticeField obj) {
-    return (obj == null) ? 0 : obj.swigCPtr;
-  }
+	public static long getCPtr(CThostFtdcNoticeField obj)
+	{
+		return (obj == null) ? 0 : obj.swigCPtr;
+	}
 
-  protected void finalize() {
-    delete();
-  }
+	protected void finalize()
+	{
+		delete();
+	}
 
-  public synchronized void delete() {
-    if (swigCPtr != 0) {
-      if (swigCMemOwn) {
-        swigCMemOwn = false;
-        ctpJNI.delete_CThostFtdcNoticeField(swigCPtr);
-      }
-      swigCPtr = 0;
-    }
-  }
+	public synchronized void delete()
+	{
+		if (swigCPtr != 0)
+		{
+			if (swigCMemOwn)
+			{
+				swigCMemOwn = false;
+				ctpJNI.delete_CThostFtdcNoticeField(swigCPtr);
+			}
+			swigCPtr = 0;
+		}
+	}
 
-  public void setBrokerID(String value) {
-    ctpJNI.CThostFtdcNoticeField_BrokerID_set(swigCPtr, this, value);
-  }
+	public void setBrokerID(String value)
+	{
+		ctpJNI.CThostFtdcNoticeField_BrokerID_set(swigCPtr, this, value);
+	}
 
-  public String getBrokerID() {
-    return ctpJNI.CThostFtdcNoticeField_BrokerID_get(swigCPtr, this);
-  }
+	public String getBrokerID()
+	{
+		return ctpJNI.CThostFtdcNoticeField_BrokerID_get(swigCPtr, this);
+	}
 
-  public void setContent(String value) {
-    ctpJNI.CThostFtdcNoticeField_Content_set(swigCPtr, this, value);
-  }
+	public void setContent(String value)
+	{
+		ctpJNI.CThostFtdcNoticeField_Content_set(swigCPtr, this, value);
+	}
 
-  public String getContent() {
-    return ctpJNI.CThostFtdcNoticeField_Content_get(swigCPtr, this);
-  }
+	public String getContent()
+	{
+		return ctpJNI.CThostFtdcNoticeField_Content_get(swigCPtr, this);
+	}
 
-  public void setSequenceLabel(String value) {
-    ctpJNI.CThostFtdcNoticeField_SequenceLabel_set(swigCPtr, this, value);
-  }
+	public void setSequenceLabel(String value)
+	{
+		ctpJNI.CThostFtdcNoticeField_SequenceLabel_set(swigCPtr, this, value);
+	}
 
-  public String getSequenceLabel() {
-    return ctpJNI.CThostFtdcNoticeField_SequenceLabel_get(swigCPtr, this);
-  }
+	public String getSequenceLabel()
+	{
+		return ctpJNI.CThostFtdcNoticeField_SequenceLabel_get(swigCPtr, this);
+	}
 
-  public CThostFtdcNoticeField() {
-    this(ctpJNI.new_CThostFtdcNoticeField(), true);
-  }
-
+	public CThostFtdcNoticeField()
+	{
+		this(ctpJNI.new_CThostFtdcNoticeField(), true);
+	}
 }

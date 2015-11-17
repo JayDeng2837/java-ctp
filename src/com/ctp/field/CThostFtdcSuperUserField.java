@@ -5,72 +5,86 @@
  * Do not make changes to this file unless you know what you are doing--modify
  * the SWIG interface file instead.
  * ----------------------------------------------------------------------------- */
-
 package com.ctp.field;
 
-import com.ctp.ctpJNI;
+import com.ctp.swig.ctpJNI;
 
-public class CThostFtdcSuperUserField {
-  private transient long swigCPtr;
-  protected transient boolean swigCMemOwn;
+public class CThostFtdcSuperUserField
+{
+	private transient long swigCPtr;
+	protected transient boolean swigCMemOwn;
 
-  protected CThostFtdcSuperUserField(long cPtr, boolean cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = cPtr;
-  }
+	protected CThostFtdcSuperUserField(long cPtr, boolean cMemoryOwn)
+	{
+		swigCMemOwn = cMemoryOwn;
+		swigCPtr = cPtr;
+	}
 
-  protected static long getCPtr(CThostFtdcSuperUserField obj) {
-    return (obj == null) ? 0 : obj.swigCPtr;
-  }
+	public static long getCPtr(CThostFtdcSuperUserField obj)
+	{
+		return (obj == null) ? 0 : obj.swigCPtr;
+	}
 
-  protected void finalize() {
-    delete();
-  }
+	protected void finalize()
+	{
+		delete();
+	}
 
-  public synchronized void delete() {
-    if (swigCPtr != 0) {
-      if (swigCMemOwn) {
-        swigCMemOwn = false;
-        ctpJNI.delete_CThostFtdcSuperUserField(swigCPtr);
-      }
-      swigCPtr = 0;
-    }
-  }
+	public synchronized void delete()
+	{
+		if (swigCPtr != 0)
+		{
+			if (swigCMemOwn)
+			{
+				swigCMemOwn = false;
+				ctpJNI.delete_CThostFtdcSuperUserField(swigCPtr);
+			}
+			swigCPtr = 0;
+		}
+	}
 
-  public void setUserID(String value) {
-    ctpJNI.CThostFtdcSuperUserField_UserID_set(swigCPtr, this, value);
-  }
+	public void setUserID(String value)
+	{
+		ctpJNI.CThostFtdcSuperUserField_UserID_set(swigCPtr, this, value);
+	}
 
-  public String getUserID() {
-    return ctpJNI.CThostFtdcSuperUserField_UserID_get(swigCPtr, this);
-  }
+	public String getUserID()
+	{
+		return ctpJNI.CThostFtdcSuperUserField_UserID_get(swigCPtr, this);
+	}
 
-  public void setUserName(String value) {
-    ctpJNI.CThostFtdcSuperUserField_UserName_set(swigCPtr, this, value);
-  }
+	public void setUserName(String value)
+	{
+		ctpJNI.CThostFtdcSuperUserField_UserName_set(swigCPtr, this, value);
+	}
 
-  public String getUserName() {
-    return ctpJNI.CThostFtdcSuperUserField_UserName_get(swigCPtr, this);
-  }
+	public String getUserName()
+	{
+		return ctpJNI.CThostFtdcSuperUserField_UserName_get(swigCPtr, this);
+	}
 
-  public void setPassword(String value) {
-    ctpJNI.CThostFtdcSuperUserField_Password_set(swigCPtr, this, value);
-  }
+	public void setPassword(String value)
+	{
+		ctpJNI.CThostFtdcSuperUserField_Password_set(swigCPtr, this, value);
+	}
 
-  public String getPassword() {
-    return ctpJNI.CThostFtdcSuperUserField_Password_get(swigCPtr, this);
-  }
+	public String getPassword()
+	{
+		return ctpJNI.CThostFtdcSuperUserField_Password_get(swigCPtr, this);
+	}
 
-  public void setIsActive(int value) {
-    ctpJNI.CThostFtdcSuperUserField_IsActive_set(swigCPtr, this, value);
-  }
+	public void setIsActive(int value)
+	{
+		ctpJNI.CThostFtdcSuperUserField_IsActive_set(swigCPtr, this, value);
+	}
 
-  public int getIsActive() {
-    return ctpJNI.CThostFtdcSuperUserField_IsActive_get(swigCPtr, this);
-  }
+	public int getIsActive()
+	{
+		return ctpJNI.CThostFtdcSuperUserField_IsActive_get(swigCPtr, this);
+	}
 
-  public CThostFtdcSuperUserField() {
-    this(ctpJNI.new_CThostFtdcSuperUserField(), true);
-  }
-
+	public CThostFtdcSuperUserField()
+	{
+		this(ctpJNI.new_CThostFtdcSuperUserField(), true);
+	}
 }

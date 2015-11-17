@@ -5,72 +5,86 @@
  * Do not make changes to this file unless you know what you are doing--modify
  * the SWIG interface file instead.
  * ----------------------------------------------------------------------------- */
-
 package com.ctp.field;
 
-import com.ctp.ctpJNI;
+import com.ctp.swig.ctpJNI;
 
-public class CThostFtdcContractBankField {
-  private transient long swigCPtr;
-  protected transient boolean swigCMemOwn;
+public class CThostFtdcContractBankField
+{
+	private transient long swigCPtr;
+	protected transient boolean swigCMemOwn;
 
-  protected CThostFtdcContractBankField(long cPtr, boolean cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = cPtr;
-  }
+	protected CThostFtdcContractBankField(long cPtr, boolean cMemoryOwn)
+	{
+		swigCMemOwn = cMemoryOwn;
+		swigCPtr = cPtr;
+	}
 
-  protected static long getCPtr(CThostFtdcContractBankField obj) {
-    return (obj == null) ? 0 : obj.swigCPtr;
-  }
+	public static long getCPtr(CThostFtdcContractBankField obj)
+	{
+		return (obj == null) ? 0 : obj.swigCPtr;
+	}
 
-  protected void finalize() {
-    delete();
-  }
+	protected void finalize()
+	{
+		delete();
+	}
 
-  public synchronized void delete() {
-    if (swigCPtr != 0) {
-      if (swigCMemOwn) {
-        swigCMemOwn = false;
-        ctpJNI.delete_CThostFtdcContractBankField(swigCPtr);
-      }
-      swigCPtr = 0;
-    }
-  }
+	public synchronized void delete()
+	{
+		if (swigCPtr != 0)
+		{
+			if (swigCMemOwn)
+			{
+				swigCMemOwn = false;
+				ctpJNI.delete_CThostFtdcContractBankField(swigCPtr);
+			}
+			swigCPtr = 0;
+		}
+	}
 
-  public void setBrokerID(String value) {
-    ctpJNI.CThostFtdcContractBankField_BrokerID_set(swigCPtr, this, value);
-  }
+	public void setBrokerID(String value)
+	{
+		ctpJNI.CThostFtdcContractBankField_BrokerID_set(swigCPtr, this, value);
+	}
 
-  public String getBrokerID() {
-    return ctpJNI.CThostFtdcContractBankField_BrokerID_get(swigCPtr, this);
-  }
+	public String getBrokerID()
+	{
+		return ctpJNI.CThostFtdcContractBankField_BrokerID_get(swigCPtr, this);
+	}
 
-  public void setBankID(String value) {
-    ctpJNI.CThostFtdcContractBankField_BankID_set(swigCPtr, this, value);
-  }
+	public void setBankID(String value)
+	{
+		ctpJNI.CThostFtdcContractBankField_BankID_set(swigCPtr, this, value);
+	}
 
-  public String getBankID() {
-    return ctpJNI.CThostFtdcContractBankField_BankID_get(swigCPtr, this);
-  }
+	public String getBankID()
+	{
+		return ctpJNI.CThostFtdcContractBankField_BankID_get(swigCPtr, this);
+	}
 
-  public void setBankBrchID(String value) {
-    ctpJNI.CThostFtdcContractBankField_BankBrchID_set(swigCPtr, this, value);
-  }
+	public void setBankBrchID(String value)
+	{
+		ctpJNI.CThostFtdcContractBankField_BankBrchID_set(swigCPtr, this, value);
+	}
 
-  public String getBankBrchID() {
-    return ctpJNI.CThostFtdcContractBankField_BankBrchID_get(swigCPtr, this);
-  }
+	public String getBankBrchID()
+	{
+		return ctpJNI.CThostFtdcContractBankField_BankBrchID_get(swigCPtr, this);
+	}
 
-  public void setBankName(String value) {
-    ctpJNI.CThostFtdcContractBankField_BankName_set(swigCPtr, this, value);
-  }
+	public void setBankName(String value)
+	{
+		ctpJNI.CThostFtdcContractBankField_BankName_set(swigCPtr, this, value);
+	}
 
-  public String getBankName() {
-    return ctpJNI.CThostFtdcContractBankField_BankName_get(swigCPtr, this);
-  }
+	public String getBankName()
+	{
+		return ctpJNI.CThostFtdcContractBankField_BankName_get(swigCPtr, this);
+	}
 
-  public CThostFtdcContractBankField() {
-    this(ctpJNI.new_CThostFtdcContractBankField(), true);
-  }
-
+	public CThostFtdcContractBankField()
+	{
+		this(ctpJNI.new_CThostFtdcContractBankField(), true);
+	}
 }

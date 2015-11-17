@@ -5,56 +5,66 @@
  * Do not make changes to this file unless you know what you are doing--modify
  * the SWIG interface file instead.
  * ----------------------------------------------------------------------------- */
-
 package com.ctp.field;
 
-import com.ctp.ctpJNI;
+import com.ctp.swig.ctpJNI;
 
-public class CThostFtdcSettlementRefField {
-  private transient long swigCPtr;
-  protected transient boolean swigCMemOwn;
+public class CThostFtdcSettlementRefField
+{
+	private transient long swigCPtr;
+	protected transient boolean swigCMemOwn;
 
-  protected CThostFtdcSettlementRefField(long cPtr, boolean cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = cPtr;
-  }
+	protected CThostFtdcSettlementRefField(long cPtr, boolean cMemoryOwn)
+	{
+		swigCMemOwn = cMemoryOwn;
+		swigCPtr = cPtr;
+	}
 
-  protected static long getCPtr(CThostFtdcSettlementRefField obj) {
-    return (obj == null) ? 0 : obj.swigCPtr;
-  }
+	public static long getCPtr(CThostFtdcSettlementRefField obj)
+	{
+		return (obj == null) ? 0 : obj.swigCPtr;
+	}
 
-  protected void finalize() {
-    delete();
-  }
+	protected void finalize()
+	{
+		delete();
+	}
 
-  public synchronized void delete() {
-    if (swigCPtr != 0) {
-      if (swigCMemOwn) {
-        swigCMemOwn = false;
-        ctpJNI.delete_CThostFtdcSettlementRefField(swigCPtr);
-      }
-      swigCPtr = 0;
-    }
-  }
+	public synchronized void delete()
+	{
+		if (swigCPtr != 0)
+		{
+			if (swigCMemOwn)
+			{
+				swigCMemOwn = false;
+				ctpJNI.delete_CThostFtdcSettlementRefField(swigCPtr);
+			}
+			swigCPtr = 0;
+		}
+	}
 
-  public void setTradingDay(String value) {
-    ctpJNI.CThostFtdcSettlementRefField_TradingDay_set(swigCPtr, this, value);
-  }
+	public void setTradingDay(String value)
+	{
+		ctpJNI.CThostFtdcSettlementRefField_TradingDay_set(swigCPtr, this, value);
+	}
 
-  public String getTradingDay() {
-    return ctpJNI.CThostFtdcSettlementRefField_TradingDay_get(swigCPtr, this);
-  }
+	public String getTradingDay()
+	{
+		return ctpJNI.CThostFtdcSettlementRefField_TradingDay_get(swigCPtr, this);
+	}
 
-  public void setSettlementID(int value) {
-    ctpJNI.CThostFtdcSettlementRefField_SettlementID_set(swigCPtr, this, value);
-  }
+	public void setSettlementID(int value)
+	{
+		ctpJNI.CThostFtdcSettlementRefField_SettlementID_set(swigCPtr, this, value);
+	}
 
-  public int getSettlementID() {
-    return ctpJNI.CThostFtdcSettlementRefField_SettlementID_get(swigCPtr, this);
-  }
+	public int getSettlementID()
+	{
+		return ctpJNI.CThostFtdcSettlementRefField_SettlementID_get(swigCPtr, this);
+	}
 
-  public CThostFtdcSettlementRefField() {
-    this(ctpJNI.new_CThostFtdcSettlementRefField(), true);
-  }
-
+	public CThostFtdcSettlementRefField()
+	{
+		this(ctpJNI.new_CThostFtdcSettlementRefField(), true);
+	}
 }

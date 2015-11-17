@@ -5,72 +5,86 @@
  * Do not make changes to this file unless you know what you are doing--modify
  * the SWIG interface file instead.
  * ----------------------------------------------------------------------------- */
-
 package com.ctp.field;
 
-import com.ctp.ctpJNI;
+import com.ctp.swig.ctpJNI;
 
-public class CThostFtdcMarketDataBestPriceField {
-  private transient long swigCPtr;
-  protected transient boolean swigCMemOwn;
+public class CThostFtdcMarketDataBestPriceField
+{
+	private transient long swigCPtr;
+	protected transient boolean swigCMemOwn;
 
-  protected CThostFtdcMarketDataBestPriceField(long cPtr, boolean cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = cPtr;
-  }
+	protected CThostFtdcMarketDataBestPriceField(long cPtr, boolean cMemoryOwn)
+	{
+		swigCMemOwn = cMemoryOwn;
+		swigCPtr = cPtr;
+	}
 
-  protected static long getCPtr(CThostFtdcMarketDataBestPriceField obj) {
-    return (obj == null) ? 0 : obj.swigCPtr;
-  }
+	public static long getCPtr(CThostFtdcMarketDataBestPriceField obj)
+	{
+		return (obj == null) ? 0 : obj.swigCPtr;
+	}
 
-  protected void finalize() {
-    delete();
-  }
+	protected void finalize()
+	{
+		delete();
+	}
 
-  public synchronized void delete() {
-    if (swigCPtr != 0) {
-      if (swigCMemOwn) {
-        swigCMemOwn = false;
-        ctpJNI.delete_CThostFtdcMarketDataBestPriceField(swigCPtr);
-      }
-      swigCPtr = 0;
-    }
-  }
+	public synchronized void delete()
+	{
+		if (swigCPtr != 0)
+		{
+			if (swigCMemOwn)
+			{
+				swigCMemOwn = false;
+				ctpJNI.delete_CThostFtdcMarketDataBestPriceField(swigCPtr);
+			}
+			swigCPtr = 0;
+		}
+	}
 
-  public void setBidPrice1(double value) {
-    ctpJNI.CThostFtdcMarketDataBestPriceField_BidPrice1_set(swigCPtr, this, value);
-  }
+	public void setBidPrice1(double value)
+	{
+		ctpJNI.CThostFtdcMarketDataBestPriceField_BidPrice1_set(swigCPtr, this, value);
+	}
 
-  public double getBidPrice1() {
-    return ctpJNI.CThostFtdcMarketDataBestPriceField_BidPrice1_get(swigCPtr, this);
-  }
+	public double getBidPrice1()
+	{
+		return ctpJNI.CThostFtdcMarketDataBestPriceField_BidPrice1_get(swigCPtr, this);
+	}
 
-  public void setBidVolume1(int value) {
-    ctpJNI.CThostFtdcMarketDataBestPriceField_BidVolume1_set(swigCPtr, this, value);
-  }
+	public void setBidVolume1(int value)
+	{
+		ctpJNI.CThostFtdcMarketDataBestPriceField_BidVolume1_set(swigCPtr, this, value);
+	}
 
-  public int getBidVolume1() {
-    return ctpJNI.CThostFtdcMarketDataBestPriceField_BidVolume1_get(swigCPtr, this);
-  }
+	public int getBidVolume1()
+	{
+		return ctpJNI.CThostFtdcMarketDataBestPriceField_BidVolume1_get(swigCPtr, this);
+	}
 
-  public void setAskPrice1(double value) {
-    ctpJNI.CThostFtdcMarketDataBestPriceField_AskPrice1_set(swigCPtr, this, value);
-  }
+	public void setAskPrice1(double value)
+	{
+		ctpJNI.CThostFtdcMarketDataBestPriceField_AskPrice1_set(swigCPtr, this, value);
+	}
 
-  public double getAskPrice1() {
-    return ctpJNI.CThostFtdcMarketDataBestPriceField_AskPrice1_get(swigCPtr, this);
-  }
+	public double getAskPrice1()
+	{
+		return ctpJNI.CThostFtdcMarketDataBestPriceField_AskPrice1_get(swigCPtr, this);
+	}
 
-  public void setAskVolume1(int value) {
-    ctpJNI.CThostFtdcMarketDataBestPriceField_AskVolume1_set(swigCPtr, this, value);
-  }
+	public void setAskVolume1(int value)
+	{
+		ctpJNI.CThostFtdcMarketDataBestPriceField_AskVolume1_set(swigCPtr, this, value);
+	}
 
-  public int getAskVolume1() {
-    return ctpJNI.CThostFtdcMarketDataBestPriceField_AskVolume1_get(swigCPtr, this);
-  }
+	public int getAskVolume1()
+	{
+		return ctpJNI.CThostFtdcMarketDataBestPriceField_AskVolume1_get(swigCPtr, this);
+	}
 
-  public CThostFtdcMarketDataBestPriceField() {
-    this(ctpJNI.new_CThostFtdcMarketDataBestPriceField(), true);
-  }
-
+	public CThostFtdcMarketDataBestPriceField()
+	{
+		this(ctpJNI.new_CThostFtdcMarketDataBestPriceField(), true);
+	}
 }

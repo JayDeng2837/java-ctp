@@ -5,64 +5,76 @@
  * Do not make changes to this file unless you know what you are doing--modify
  * the SWIG interface file instead.
  * ----------------------------------------------------------------------------- */
-
 package com.ctp.field;
 
-import com.ctp.ctpJNI;
+import com.ctp.swig.ctpJNI;
 
-public class CThostFtdcBrokerUserRightAssignField {
-  private transient long swigCPtr;
-  protected transient boolean swigCMemOwn;
+public class CThostFtdcBrokerUserRightAssignField
+{
+	private transient long swigCPtr;
+	protected transient boolean swigCMemOwn;
 
-  protected CThostFtdcBrokerUserRightAssignField(long cPtr, boolean cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = cPtr;
-  }
+	protected CThostFtdcBrokerUserRightAssignField(long cPtr, boolean cMemoryOwn)
+	{
+		swigCMemOwn = cMemoryOwn;
+		swigCPtr = cPtr;
+	}
 
-  protected static long getCPtr(CThostFtdcBrokerUserRightAssignField obj) {
-    return (obj == null) ? 0 : obj.swigCPtr;
-  }
+	public static long getCPtr(CThostFtdcBrokerUserRightAssignField obj)
+	{
+		return (obj == null) ? 0 : obj.swigCPtr;
+	}
 
-  protected void finalize() {
-    delete();
-  }
+	protected void finalize()
+	{
+		delete();
+	}
 
-  public synchronized void delete() {
-    if (swigCPtr != 0) {
-      if (swigCMemOwn) {
-        swigCMemOwn = false;
-        ctpJNI.delete_CThostFtdcBrokerUserRightAssignField(swigCPtr);
-      }
-      swigCPtr = 0;
-    }
-  }
+	public synchronized void delete()
+	{
+		if (swigCPtr != 0)
+		{
+			if (swigCMemOwn)
+			{
+				swigCMemOwn = false;
+				ctpJNI.delete_CThostFtdcBrokerUserRightAssignField(swigCPtr);
+			}
+			swigCPtr = 0;
+		}
+	}
 
-  public void setBrokerID(String value) {
-    ctpJNI.CThostFtdcBrokerUserRightAssignField_BrokerID_set(swigCPtr, this, value);
-  }
+	public void setBrokerID(String value)
+	{
+		ctpJNI.CThostFtdcBrokerUserRightAssignField_BrokerID_set(swigCPtr, this, value);
+	}
 
-  public String getBrokerID() {
-    return ctpJNI.CThostFtdcBrokerUserRightAssignField_BrokerID_get(swigCPtr, this);
-  }
+	public String getBrokerID()
+	{
+		return ctpJNI.CThostFtdcBrokerUserRightAssignField_BrokerID_get(swigCPtr, this);
+	}
 
-  public void setDRIdentityID(int value) {
-    ctpJNI.CThostFtdcBrokerUserRightAssignField_DRIdentityID_set(swigCPtr, this, value);
-  }
+	public void setDRIdentityID(int value)
+	{
+		ctpJNI.CThostFtdcBrokerUserRightAssignField_DRIdentityID_set(swigCPtr, this, value);
+	}
 
-  public int getDRIdentityID() {
-    return ctpJNI.CThostFtdcBrokerUserRightAssignField_DRIdentityID_get(swigCPtr, this);
-  }
+	public int getDRIdentityID()
+	{
+		return ctpJNI.CThostFtdcBrokerUserRightAssignField_DRIdentityID_get(swigCPtr, this);
+	}
 
-  public void setTradeable(int value) {
-    ctpJNI.CThostFtdcBrokerUserRightAssignField_Tradeable_set(swigCPtr, this, value);
-  }
+	public void setTradeable(int value)
+	{
+		ctpJNI.CThostFtdcBrokerUserRightAssignField_Tradeable_set(swigCPtr, this, value);
+	}
 
-  public int getTradeable() {
-    return ctpJNI.CThostFtdcBrokerUserRightAssignField_Tradeable_get(swigCPtr, this);
-  }
+	public int getTradeable()
+	{
+		return ctpJNI.CThostFtdcBrokerUserRightAssignField_Tradeable_get(swigCPtr, this);
+	}
 
-  public CThostFtdcBrokerUserRightAssignField() {
-    this(ctpJNI.new_CThostFtdcBrokerUserRightAssignField(), true);
-  }
-
+	public CThostFtdcBrokerUserRightAssignField()
+	{
+		this(ctpJNI.new_CThostFtdcBrokerUserRightAssignField(), true);
+	}
 }

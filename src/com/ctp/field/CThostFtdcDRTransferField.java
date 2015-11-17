@@ -5,72 +5,86 @@
  * Do not make changes to this file unless you know what you are doing--modify
  * the SWIG interface file instead.
  * ----------------------------------------------------------------------------- */
-
 package com.ctp.field;
 
-import com.ctp.ctpJNI;
+import com.ctp.swig.ctpJNI;
 
-public class CThostFtdcDRTransferField {
-  private transient long swigCPtr;
-  protected transient boolean swigCMemOwn;
+public class CThostFtdcDRTransferField
+{
+	private transient long swigCPtr;
+	protected transient boolean swigCMemOwn;
 
-  protected CThostFtdcDRTransferField(long cPtr, boolean cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = cPtr;
-  }
+	protected CThostFtdcDRTransferField(long cPtr, boolean cMemoryOwn)
+	{
+		swigCMemOwn = cMemoryOwn;
+		swigCPtr = cPtr;
+	}
 
-  protected static long getCPtr(CThostFtdcDRTransferField obj) {
-    return (obj == null) ? 0 : obj.swigCPtr;
-  }
+	public static long getCPtr(CThostFtdcDRTransferField obj)
+	{
+		return (obj == null) ? 0 : obj.swigCPtr;
+	}
 
-  protected void finalize() {
-    delete();
-  }
+	protected void finalize()
+	{
+		delete();
+	}
 
-  public synchronized void delete() {
-    if (swigCPtr != 0) {
-      if (swigCMemOwn) {
-        swigCMemOwn = false;
-        ctpJNI.delete_CThostFtdcDRTransferField(swigCPtr);
-      }
-      swigCPtr = 0;
-    }
-  }
+	public synchronized void delete()
+	{
+		if (swigCPtr != 0)
+		{
+			if (swigCMemOwn)
+			{
+				swigCMemOwn = false;
+				ctpJNI.delete_CThostFtdcDRTransferField(swigCPtr);
+			}
+			swigCPtr = 0;
+		}
+	}
 
-  public void setOrigDRIdentityID(int value) {
-    ctpJNI.CThostFtdcDRTransferField_OrigDRIdentityID_set(swigCPtr, this, value);
-  }
+	public void setOrigDRIdentityID(int value)
+	{
+		ctpJNI.CThostFtdcDRTransferField_OrigDRIdentityID_set(swigCPtr, this, value);
+	}
 
-  public int getOrigDRIdentityID() {
-    return ctpJNI.CThostFtdcDRTransferField_OrigDRIdentityID_get(swigCPtr, this);
-  }
+	public int getOrigDRIdentityID()
+	{
+		return ctpJNI.CThostFtdcDRTransferField_OrigDRIdentityID_get(swigCPtr, this);
+	}
 
-  public void setDestDRIdentityID(int value) {
-    ctpJNI.CThostFtdcDRTransferField_DestDRIdentityID_set(swigCPtr, this, value);
-  }
+	public void setDestDRIdentityID(int value)
+	{
+		ctpJNI.CThostFtdcDRTransferField_DestDRIdentityID_set(swigCPtr, this, value);
+	}
 
-  public int getDestDRIdentityID() {
-    return ctpJNI.CThostFtdcDRTransferField_DestDRIdentityID_get(swigCPtr, this);
-  }
+	public int getDestDRIdentityID()
+	{
+		return ctpJNI.CThostFtdcDRTransferField_DestDRIdentityID_get(swigCPtr, this);
+	}
 
-  public void setOrigBrokerID(String value) {
-    ctpJNI.CThostFtdcDRTransferField_OrigBrokerID_set(swigCPtr, this, value);
-  }
+	public void setOrigBrokerID(String value)
+	{
+		ctpJNI.CThostFtdcDRTransferField_OrigBrokerID_set(swigCPtr, this, value);
+	}
 
-  public String getOrigBrokerID() {
-    return ctpJNI.CThostFtdcDRTransferField_OrigBrokerID_get(swigCPtr, this);
-  }
+	public String getOrigBrokerID()
+	{
+		return ctpJNI.CThostFtdcDRTransferField_OrigBrokerID_get(swigCPtr, this);
+	}
 
-  public void setDestBrokerID(String value) {
-    ctpJNI.CThostFtdcDRTransferField_DestBrokerID_set(swigCPtr, this, value);
-  }
+	public void setDestBrokerID(String value)
+	{
+		ctpJNI.CThostFtdcDRTransferField_DestBrokerID_set(swigCPtr, this, value);
+	}
 
-  public String getDestBrokerID() {
-    return ctpJNI.CThostFtdcDRTransferField_DestBrokerID_get(swigCPtr, this);
-  }
+	public String getDestBrokerID()
+	{
+		return ctpJNI.CThostFtdcDRTransferField_DestBrokerID_get(swigCPtr, this);
+	}
 
-  public CThostFtdcDRTransferField() {
-    this(ctpJNI.new_CThostFtdcDRTransferField(), true);
-  }
-
+	public CThostFtdcDRTransferField()
+	{
+		this(ctpJNI.new_CThostFtdcDRTransferField(), true);
+	}
 }

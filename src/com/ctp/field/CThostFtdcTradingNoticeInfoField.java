@@ -5,88 +5,106 @@
  * Do not make changes to this file unless you know what you are doing--modify
  * the SWIG interface file instead.
  * ----------------------------------------------------------------------------- */
-
 package com.ctp.field;
 
-import com.ctp.ctpJNI;
+import com.ctp.swig.ctpJNI;
 
-public class CThostFtdcTradingNoticeInfoField {
-  private transient long swigCPtr;
-  protected transient boolean swigCMemOwn;
+public class CThostFtdcTradingNoticeInfoField
+{
+	private transient long swigCPtr;
+	protected transient boolean swigCMemOwn;
 
-  protected CThostFtdcTradingNoticeInfoField(long cPtr, boolean cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = cPtr;
-  }
+	protected CThostFtdcTradingNoticeInfoField(long cPtr, boolean cMemoryOwn)
+	{
+		swigCMemOwn = cMemoryOwn;
+		swigCPtr = cPtr;
+	}
 
-  protected static long getCPtr(CThostFtdcTradingNoticeInfoField obj) {
-    return (obj == null) ? 0 : obj.swigCPtr;
-  }
+	public static long getCPtr(CThostFtdcTradingNoticeInfoField obj)
+	{
+		return (obj == null) ? 0 : obj.swigCPtr;
+	}
 
-  protected void finalize() {
-    delete();
-  }
+	protected void finalize()
+	{
+		delete();
+	}
 
-  public synchronized void delete() {
-    if (swigCPtr != 0) {
-      if (swigCMemOwn) {
-        swigCMemOwn = false;
-        ctpJNI.delete_CThostFtdcTradingNoticeInfoField(swigCPtr);
-      }
-      swigCPtr = 0;
-    }
-  }
+	public synchronized void delete()
+	{
+		if (swigCPtr != 0)
+		{
+			if (swigCMemOwn)
+			{
+				swigCMemOwn = false;
+				ctpJNI.delete_CThostFtdcTradingNoticeInfoField(swigCPtr);
+			}
+			swigCPtr = 0;
+		}
+	}
 
-  public void setBrokerID(String value) {
-    ctpJNI.CThostFtdcTradingNoticeInfoField_BrokerID_set(swigCPtr, this, value);
-  }
+	public void setBrokerID(String value)
+	{
+		ctpJNI.CThostFtdcTradingNoticeInfoField_BrokerID_set(swigCPtr, this, value);
+	}
 
-  public String getBrokerID() {
-    return ctpJNI.CThostFtdcTradingNoticeInfoField_BrokerID_get(swigCPtr, this);
-  }
+	public String getBrokerID()
+	{
+		return ctpJNI.CThostFtdcTradingNoticeInfoField_BrokerID_get(swigCPtr, this);
+	}
 
-  public void setInvestorID(String value) {
-    ctpJNI.CThostFtdcTradingNoticeInfoField_InvestorID_set(swigCPtr, this, value);
-  }
+	public void setInvestorID(String value)
+	{
+		ctpJNI.CThostFtdcTradingNoticeInfoField_InvestorID_set(swigCPtr, this, value);
+	}
 
-  public String getInvestorID() {
-    return ctpJNI.CThostFtdcTradingNoticeInfoField_InvestorID_get(swigCPtr, this);
-  }
+	public String getInvestorID()
+	{
+		return ctpJNI.CThostFtdcTradingNoticeInfoField_InvestorID_get(swigCPtr, this);
+	}
 
-  public void setSendTime(String value) {
-    ctpJNI.CThostFtdcTradingNoticeInfoField_SendTime_set(swigCPtr, this, value);
-  }
+	public void setSendTime(String value)
+	{
+		ctpJNI.CThostFtdcTradingNoticeInfoField_SendTime_set(swigCPtr, this, value);
+	}
 
-  public String getSendTime() {
-    return ctpJNI.CThostFtdcTradingNoticeInfoField_SendTime_get(swigCPtr, this);
-  }
+	public String getSendTime()
+	{
+		return ctpJNI.CThostFtdcTradingNoticeInfoField_SendTime_get(swigCPtr, this);
+	}
 
-  public void setFieldContent(String value) {
-    ctpJNI.CThostFtdcTradingNoticeInfoField_FieldContent_set(swigCPtr, this, value);
-  }
+	public void setFieldContent(String value)
+	{
+		ctpJNI.CThostFtdcTradingNoticeInfoField_FieldContent_set(swigCPtr, this, value);
+	}
 
-  public String getFieldContent() {
-    return ctpJNI.CThostFtdcTradingNoticeInfoField_FieldContent_get(swigCPtr, this);
-  }
+	public String getFieldContent()
+	{
+		return ctpJNI.CThostFtdcTradingNoticeInfoField_FieldContent_get(swigCPtr, this);
+	}
 
-  public void setSequenceSeries(short value) {
-    ctpJNI.CThostFtdcTradingNoticeInfoField_SequenceSeries_set(swigCPtr, this, value);
-  }
+	public void setSequenceSeries(short value)
+	{
+		ctpJNI.CThostFtdcTradingNoticeInfoField_SequenceSeries_set(swigCPtr, this, value);
+	}
 
-  public short getSequenceSeries() {
-    return ctpJNI.CThostFtdcTradingNoticeInfoField_SequenceSeries_get(swigCPtr, this);
-  }
+	public short getSequenceSeries()
+	{
+		return ctpJNI.CThostFtdcTradingNoticeInfoField_SequenceSeries_get(swigCPtr, this);
+	}
 
-  public void setSequenceNo(int value) {
-    ctpJNI.CThostFtdcTradingNoticeInfoField_SequenceNo_set(swigCPtr, this, value);
-  }
+	public void setSequenceNo(int value)
+	{
+		ctpJNI.CThostFtdcTradingNoticeInfoField_SequenceNo_set(swigCPtr, this, value);
+	}
 
-  public int getSequenceNo() {
-    return ctpJNI.CThostFtdcTradingNoticeInfoField_SequenceNo_get(swigCPtr, this);
-  }
+	public int getSequenceNo()
+	{
+		return ctpJNI.CThostFtdcTradingNoticeInfoField_SequenceNo_get(swigCPtr, this);
+	}
 
-  public CThostFtdcTradingNoticeInfoField() {
-    this(ctpJNI.new_CThostFtdcTradingNoticeInfoField(), true);
-  }
-
+	public CThostFtdcTradingNoticeInfoField()
+	{
+		this(ctpJNI.new_CThostFtdcTradingNoticeInfoField(), true);
+	}
 }

@@ -5,88 +5,106 @@
  * Do not make changes to this file unless you know what you are doing--modify
  * the SWIG interface file instead.
  * ----------------------------------------------------------------------------- */
-
 package com.ctp.field;
 
-import com.ctp.ctpJNI;
+import com.ctp.swig.ctpJNI;
 
-public class CThostFtdcCombinationLegField {
-  private transient long swigCPtr;
-  protected transient boolean swigCMemOwn;
+public class CThostFtdcCombinationLegField
+{
+	private transient long swigCPtr;
+	protected transient boolean swigCMemOwn;
 
-  protected CThostFtdcCombinationLegField(long cPtr, boolean cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = cPtr;
-  }
+	protected CThostFtdcCombinationLegField(long cPtr, boolean cMemoryOwn)
+	{
+		swigCMemOwn = cMemoryOwn;
+		swigCPtr = cPtr;
+	}
 
-  protected static long getCPtr(CThostFtdcCombinationLegField obj) {
-    return (obj == null) ? 0 : obj.swigCPtr;
-  }
+	public static long getCPtr(CThostFtdcCombinationLegField obj)
+	{
+		return (obj == null) ? 0 : obj.swigCPtr;
+	}
 
-  protected void finalize() {
-    delete();
-  }
+	protected void finalize()
+	{
+		delete();
+	}
 
-  public synchronized void delete() {
-    if (swigCPtr != 0) {
-      if (swigCMemOwn) {
-        swigCMemOwn = false;
-        ctpJNI.delete_CThostFtdcCombinationLegField(swigCPtr);
-      }
-      swigCPtr = 0;
-    }
-  }
+	public synchronized void delete()
+	{
+		if (swigCPtr != 0)
+		{
+			if (swigCMemOwn)
+			{
+				swigCMemOwn = false;
+				ctpJNI.delete_CThostFtdcCombinationLegField(swigCPtr);
+			}
+			swigCPtr = 0;
+		}
+	}
 
-  public void setCombInstrumentID(String value) {
-    ctpJNI.CThostFtdcCombinationLegField_CombInstrumentID_set(swigCPtr, this, value);
-  }
+	public void setCombInstrumentID(String value)
+	{
+		ctpJNI.CThostFtdcCombinationLegField_CombInstrumentID_set(swigCPtr, this, value);
+	}
 
-  public String getCombInstrumentID() {
-    return ctpJNI.CThostFtdcCombinationLegField_CombInstrumentID_get(swigCPtr, this);
-  }
+	public String getCombInstrumentID()
+	{
+		return ctpJNI.CThostFtdcCombinationLegField_CombInstrumentID_get(swigCPtr, this);
+	}
 
-  public void setLegID(int value) {
-    ctpJNI.CThostFtdcCombinationLegField_LegID_set(swigCPtr, this, value);
-  }
+	public void setLegID(int value)
+	{
+		ctpJNI.CThostFtdcCombinationLegField_LegID_set(swigCPtr, this, value);
+	}
 
-  public int getLegID() {
-    return ctpJNI.CThostFtdcCombinationLegField_LegID_get(swigCPtr, this);
-  }
+	public int getLegID()
+	{
+		return ctpJNI.CThostFtdcCombinationLegField_LegID_get(swigCPtr, this);
+	}
 
-  public void setLegInstrumentID(String value) {
-    ctpJNI.CThostFtdcCombinationLegField_LegInstrumentID_set(swigCPtr, this, value);
-  }
+	public void setLegInstrumentID(String value)
+	{
+		ctpJNI.CThostFtdcCombinationLegField_LegInstrumentID_set(swigCPtr, this, value);
+	}
 
-  public String getLegInstrumentID() {
-    return ctpJNI.CThostFtdcCombinationLegField_LegInstrumentID_get(swigCPtr, this);
-  }
+	public String getLegInstrumentID()
+	{
+		return ctpJNI.CThostFtdcCombinationLegField_LegInstrumentID_get(swigCPtr, this);
+	}
 
-  public void setDirection(char value) {
-    ctpJNI.CThostFtdcCombinationLegField_Direction_set(swigCPtr, this, value);
-  }
+	public void setDirection(char value)
+	{
+		ctpJNI.CThostFtdcCombinationLegField_Direction_set(swigCPtr, this, value);
+	}
 
-  public char getDirection() {
-    return ctpJNI.CThostFtdcCombinationLegField_Direction_get(swigCPtr, this);
-  }
+	public char getDirection()
+	{
+		return ctpJNI.CThostFtdcCombinationLegField_Direction_get(swigCPtr, this);
+	}
 
-  public void setLegMultiple(int value) {
-    ctpJNI.CThostFtdcCombinationLegField_LegMultiple_set(swigCPtr, this, value);
-  }
+	public void setLegMultiple(int value)
+	{
+		ctpJNI.CThostFtdcCombinationLegField_LegMultiple_set(swigCPtr, this, value);
+	}
 
-  public int getLegMultiple() {
-    return ctpJNI.CThostFtdcCombinationLegField_LegMultiple_get(swigCPtr, this);
-  }
+	public int getLegMultiple()
+	{
+		return ctpJNI.CThostFtdcCombinationLegField_LegMultiple_get(swigCPtr, this);
+	}
 
-  public void setImplyLevel(int value) {
-    ctpJNI.CThostFtdcCombinationLegField_ImplyLevel_set(swigCPtr, this, value);
-  }
+	public void setImplyLevel(int value)
+	{
+		ctpJNI.CThostFtdcCombinationLegField_ImplyLevel_set(swigCPtr, this, value);
+	}
 
-  public int getImplyLevel() {
-    return ctpJNI.CThostFtdcCombinationLegField_ImplyLevel_get(swigCPtr, this);
-  }
+	public int getImplyLevel()
+	{
+		return ctpJNI.CThostFtdcCombinationLegField_ImplyLevel_get(swigCPtr, this);
+	}
 
-  public CThostFtdcCombinationLegField() {
-    this(ctpJNI.new_CThostFtdcCombinationLegField(), true);
-  }
-
+	public CThostFtdcCombinationLegField()
+	{
+		this(ctpJNI.new_CThostFtdcCombinationLegField(), true);
+	}
 }

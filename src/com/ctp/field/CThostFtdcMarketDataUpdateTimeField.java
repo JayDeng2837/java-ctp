@@ -5,72 +5,86 @@
  * Do not make changes to this file unless you know what you are doing--modify
  * the SWIG interface file instead.
  * ----------------------------------------------------------------------------- */
-
 package com.ctp.field;
 
-import com.ctp.ctpJNI;
+import com.ctp.swig.ctpJNI;
 
-public class CThostFtdcMarketDataUpdateTimeField {
-  private transient long swigCPtr;
-  protected transient boolean swigCMemOwn;
+public class CThostFtdcMarketDataUpdateTimeField
+{
+	private transient long swigCPtr;
+	protected transient boolean swigCMemOwn;
 
-  protected CThostFtdcMarketDataUpdateTimeField(long cPtr, boolean cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = cPtr;
-  }
+	protected CThostFtdcMarketDataUpdateTimeField(long cPtr, boolean cMemoryOwn)
+	{
+		swigCMemOwn = cMemoryOwn;
+		swigCPtr = cPtr;
+	}
 
-  protected static long getCPtr(CThostFtdcMarketDataUpdateTimeField obj) {
-    return (obj == null) ? 0 : obj.swigCPtr;
-  }
+	public static long getCPtr(CThostFtdcMarketDataUpdateTimeField obj)
+	{
+		return (obj == null) ? 0 : obj.swigCPtr;
+	}
 
-  protected void finalize() {
-    delete();
-  }
+	protected void finalize()
+	{
+		delete();
+	}
 
-  public synchronized void delete() {
-    if (swigCPtr != 0) {
-      if (swigCMemOwn) {
-        swigCMemOwn = false;
-        ctpJNI.delete_CThostFtdcMarketDataUpdateTimeField(swigCPtr);
-      }
-      swigCPtr = 0;
-    }
-  }
+	public synchronized void delete()
+	{
+		if (swigCPtr != 0)
+		{
+			if (swigCMemOwn)
+			{
+				swigCMemOwn = false;
+				ctpJNI.delete_CThostFtdcMarketDataUpdateTimeField(swigCPtr);
+			}
+			swigCPtr = 0;
+		}
+	}
 
-  public void setInstrumentID(String value) {
-    ctpJNI.CThostFtdcMarketDataUpdateTimeField_InstrumentID_set(swigCPtr, this, value);
-  }
+	public void setInstrumentID(String value)
+	{
+		ctpJNI.CThostFtdcMarketDataUpdateTimeField_InstrumentID_set(swigCPtr, this, value);
+	}
 
-  public String getInstrumentID() {
-    return ctpJNI.CThostFtdcMarketDataUpdateTimeField_InstrumentID_get(swigCPtr, this);
-  }
+	public String getInstrumentID()
+	{
+		return ctpJNI.CThostFtdcMarketDataUpdateTimeField_InstrumentID_get(swigCPtr, this);
+	}
 
-  public void setUpdateTime(String value) {
-    ctpJNI.CThostFtdcMarketDataUpdateTimeField_UpdateTime_set(swigCPtr, this, value);
-  }
+	public void setUpdateTime(String value)
+	{
+		ctpJNI.CThostFtdcMarketDataUpdateTimeField_UpdateTime_set(swigCPtr, this, value);
+	}
 
-  public String getUpdateTime() {
-    return ctpJNI.CThostFtdcMarketDataUpdateTimeField_UpdateTime_get(swigCPtr, this);
-  }
+	public String getUpdateTime()
+	{
+		return ctpJNI.CThostFtdcMarketDataUpdateTimeField_UpdateTime_get(swigCPtr, this);
+	}
 
-  public void setUpdateMillisec(int value) {
-    ctpJNI.CThostFtdcMarketDataUpdateTimeField_UpdateMillisec_set(swigCPtr, this, value);
-  }
+	public void setUpdateMillisec(int value)
+	{
+		ctpJNI.CThostFtdcMarketDataUpdateTimeField_UpdateMillisec_set(swigCPtr, this, value);
+	}
 
-  public int getUpdateMillisec() {
-    return ctpJNI.CThostFtdcMarketDataUpdateTimeField_UpdateMillisec_get(swigCPtr, this);
-  }
+	public int getUpdateMillisec()
+	{
+		return ctpJNI.CThostFtdcMarketDataUpdateTimeField_UpdateMillisec_get(swigCPtr, this);
+	}
 
-  public void setActionDay(String value) {
-    ctpJNI.CThostFtdcMarketDataUpdateTimeField_ActionDay_set(swigCPtr, this, value);
-  }
+	public void setActionDay(String value)
+	{
+		ctpJNI.CThostFtdcMarketDataUpdateTimeField_ActionDay_set(swigCPtr, this, value);
+	}
 
-  public String getActionDay() {
-    return ctpJNI.CThostFtdcMarketDataUpdateTimeField_ActionDay_get(swigCPtr, this);
-  }
+	public String getActionDay()
+	{
+		return ctpJNI.CThostFtdcMarketDataUpdateTimeField_ActionDay_get(swigCPtr, this);
+	}
 
-  public CThostFtdcMarketDataUpdateTimeField() {
-    this(ctpJNI.new_CThostFtdcMarketDataUpdateTimeField(), true);
-  }
-
+	public CThostFtdcMarketDataUpdateTimeField()
+	{
+		this(ctpJNI.new_CThostFtdcMarketDataUpdateTimeField(), true);
+	}
 }
